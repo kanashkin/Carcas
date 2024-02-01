@@ -81,6 +81,7 @@ span {
     font-size: 20px;
     font-weight: 400;
     line-height: 130%;
+    max-width: fit-content;
 }
 
 .click-btn.light-green {
@@ -360,3 +361,186 @@ span {
     text-align: center;
 }
 
+/* ABOUT SECTION */
+
+.about {
+    padding: 127px 0;
+    background: rgb(60, 78, 61);
+}
+
+.about__item {
+    display: flex;
+    gap: 51px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.about-title {
+    color: rgb(255, 255, 255);
+    font-family: 'Geist Variable', sans-serif;
+    font-size: 74px;
+    font-weight: 200;
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.about-block-1 {
+    max-width: 289px;
+    width: 100%;
+}
+
+.about__item:first-child {
+    padding-bottom: 104px;
+}
+.about__item:nth-child(2) {
+    padding: 87px 0 84px;
+}
+.about__item:nth-child(3) {
+    padding-top: 88px;
+    border-bottom: none;
+}
+
+.about__item-text {
+    color: rgb(255, 255, 255);
+    font-family: 'Geist Variable', sans-serif;
+    font-size: 74px;
+    font-weight: 400;
+}
+
+.about__item-text img {
+    position: relative;
+}
+.about__item-text img:first-child {
+    top: 6%;
+}
+.about__item-text img:nth-child(2) {
+    top: 10%;
+}
+
+.about__info {
+    display: flex;
+    flex-direction: column;
+}
+
+.about__info-item {
+    padding: 19px 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.about__info-item:first-child {
+    padding-top: 0;
+}
+
+.about__info-item_name {
+    color: rgb(255, 255, 255);
+    font-family: 'Geist Variable', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.about__info-item_value {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 130%;
+    max-width: 65%;
+    width: 100%;
+}
+
+.about__info-item_value span {
+    font-weight: 500;
+}
+
+.add__services {
+    width: 100%;
+    display: flex;
+    gap: 73px;
+}
+
+.add__services-item {
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.add__services-item_name {
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 130%;
+}
+
+.add__services-item_descr {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 130%;
+}
+
+.consultation__wrapper {
+    display: flex;
+    gap: 52px;
+    margin-top: 130px;
+}
+
+.consultation {
+    width: 100%;
+}
+
+.consultation-title {
+    color: rgb(255, 255, 255);
+    font-family: 'Geist Variable', sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 130%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.consultation-title::after {
+    content: "Консультация";
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 130%;
+}
+
+.consultation-subtitle {
+    margin-top: 27px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 130%;
+}
+
+.consultation-form {
+    margin-top: 27px;
+    padding: 45px 54px;
+    border: 1px solid rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+    position: relative;
+}
+
+.consultation-form__input {
+    max-width: 46%;
+    color: rgba(255, 255, 255, 1);
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 130%;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.consultation-form__input::placeholder {
+    color: rgba(255, 255, 255, .5);
+}
+
+.consultation-form__image {
+    position: absolute;
+    right: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+}
