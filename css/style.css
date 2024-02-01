@@ -1,4 +1,27 @@
 /* Base styles */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap');
+
+@font-face {
+    font-family: 'Geist Variable';
+    src: url(../fonts/Geist-UltraLight.woff2) format('woff2');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Geist Variable';
+    src: url(../fonts/Geist-Light.woff2) format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Geist Variable';
+    src: url(../fonts/Geist-Regular.woff2) format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
 
 *,
 *::before,
@@ -44,4 +67,79 @@ span {
     max-width: 100%;
     margin: 0 auto;
     padding: 0 50px;
+}
+
+.consult-btn {
+    background: rgb(255, 255, 255);
+    padding: 22px 27px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 130%;
+}
+
+/* PROMO SECTION */
+
+.promo {
+    background: rgb(60, 78, 61);
+    padding: 157px 0;
+    position: relative;
+}
+
+.promo__content {
+    padding-left: 221px;
+}
+
+.promo-title {
+    max-width: 739px;
+    color: rgb(255, 255, 255);
+    font-family: 'Geist Variable', sans-serif;
+    font-size: 77.56px;
+    font-weight: 400;
+}
+
+.promo-descr {
+    max-width: 619px;
+    margin-top: 24px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 130%;
+}
+
+.promo-img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.promo-btn {
+    margin-top: 40px;
+}
+
+.promo__info {
+    margin-top: 76px;
+    display: flex;
+    gap: 50px;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+}
+
+.info-item__value {
+    color: rgb(255, 255, 255);
+    font-family: 'Geist Variable', sans-serif;
+    font-size: 64px;
+    font-weight: 400;
+}
+
+.info-item__name {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
 }
