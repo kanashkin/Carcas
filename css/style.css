@@ -78,6 +78,54 @@ span {
     line-height: 130%;
 }
 
+.nav__list-item {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 130%;
+    transition: .4s all;
+}
+
+.nav__list-item.active,
+.nav__list-item:hover {
+    font-weight: 500;
+}
+
+/* HEADER */
+
+.header {
+    position: absolute;
+    z-index: 1;
+    top: 26px;
+    left: 0;
+    width: 100%;
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 36px;
+    height: 36px;
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+}
+
+.header__nav__list {
+    display: inline-flex;
+    gap: 100px;
+}
+
+.header-phone {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 130%;
+}
+
 /* PROMO SECTION */
 
 .promo {
@@ -86,8 +134,25 @@ span {
     position: relative;
 }
 
+.promo .container {
+    position: relative;
+}
+
+.promo__nav {
+    position: absolute;
+    top: -12px;
+    left: 50px;
+    max-width: 92px;
+}
+
+.promo__nav__list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
 .promo__content {
-    padding-left: 221px;
+    padding-left: calc(100vw / 7);
 }
 
 .promo-title {
