@@ -152,7 +152,7 @@ span {
 }
 
 .promo__content {
-    padding-left: calc(100vw / 7);
+    padding-left: 171px;
 }
 
 .promo-title {
@@ -206,5 +206,31 @@ span {
     color: rgb(255, 255, 255);
     font-size: 16px;
     font-weight: 500;
+    text-align: center;
+}
+
+/* HOUSES SECTION */
+
+.houses {
+    margin-top: 43px;
+    padding-left: 221px;
+}
+
+.houses-swiper {
+    max-width: 100%;
+    margin: 0 0 0 auto;
+}
+
+.house-img {
+    display: block;
+    width: 100%;
+}
+
+.house-name {
+    margin-top: 18px;
+    color: rgb(60, 78, 61);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 130%;
     text-align: center;
 }

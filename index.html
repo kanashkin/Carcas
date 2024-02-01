@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <title>Main-page</title>
 </head>
@@ -23,44 +25,74 @@
             </a>
         </div>
     </header>
-    <section class="promo">
-        <div class="container">
-            <nav class="promo__nav">
-                <ul class="promo__nav__list nav__list">
-                    <li class="nav__list-item"><a href="">Главная</a></li>
-                    <li class="nav__list-item"><a href="">Ипотека</a></li>
-                    <li class="nav__list-item"><a href="">Акции</a></li>
-                    <li class="nav__list-item"><a href="">Проекты</a></li>
-                    <li class="nav__list-item"><a href="">Этапы работы</a></li>
-                    <li class="nav__list-item"><a href="">Отзывы</a></li>
-                    <li class="nav__list-item"><a href="">О нас</a></li>
-                    <li class="nav__list-item"><a href="">Квиз</a></li>
-                    <li class="nav__list-item"><a href="">Вопрос ответ</a></li>
-                </ul>
-            </nav>
-            <div class="promo__content">
-                <h1 class="promo-title">КАРКАСНЫЕ ДОМА ОТ 3 МЛН РУБЛЕЙ</h1>
-                <p class="promo-descr">
-                    Ваша мечта - наша реальность: Строительство каркасных домов и бань - быстро и качественно
-                </p>
-                <button class="consult-btn promo-btn">БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ</button>
-                <ul class="promo__info">
-                    <li class="promo__info-item info-item">
-                        <span class="info-item__value">5</span>
-                        <span class="info-item__name">5 ЛЕТ ГАРАНТИЯ</span>
-                    </li>
-                    <li class="promo__info-item info-item">
-                        <span class="info-item__value">230+</span>
-                        <span class="info-item__name">ЗАВЕРШЕННЫХ <br> ПРОЕКТОВ</span>
-                    </li>
-                    <li class="promo__info-item info-item">
-                        <span class="info-item__value">2.5%</span>
-                        <span class="info-item__name">ИПОТЕКА ОТ <br> 2.5%</span>
-                    </li>
-                </ul>
+    <main>
+        <section class="promo">
+            <div class="container">
+                <nav class="promo__nav">
+                    <ul class="promo__nav__list nav__list">
+                        <li class="nav__list-item"><a href="">Главная</a></li>
+                        <li class="nav__list-item"><a href="">Ипотека</a></li>
+                        <li class="nav__list-item"><a href="">Акции</a></li>
+                        <li class="nav__list-item"><a href="">Проекты</a></li>
+                        <li class="nav__list-item"><a href="">Этапы работы</a></li>
+                        <li class="nav__list-item"><a href="">Отзывы</a></li>
+                        <li class="nav__list-item"><a href="">О нас</a></li>
+                        <li class="nav__list-item"><a href="">Квиз</a></li>
+                        <li class="nav__list-item"><a href="">Вопрос ответ</a></li>
+                    </ul>
+                </nav>
+                <div class="promo__content">
+                    <h1 class="promo-title">КАРКАСНЫЕ ДОМА ОТ 3 МЛН РУБЛЕЙ</h1>
+                    <p class="promo-descr">
+                        Ваша мечта - наша реальность: Строительство каркасных домов и бань - быстро и качественно
+                    </p>
+                    <button class="consult-btn promo-btn">БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ</button>
+                    <ul class="promo__info">
+                        <li class="promo__info-item info-item">
+                            <span class="info-item__value">5</span>
+                            <span class="info-item__name">5 ЛЕТ ГАРАНТИЯ</span>
+                        </li>
+                        <li class="promo__info-item info-item">
+                            <span class="info-item__value">230+</span>
+                            <span class="info-item__name">ЗАВЕРШЕННЫХ <br> ПРОЕКТОВ</span>
+                        </li>
+                        <li class="promo__info-item info-item">
+                            <span class="info-item__value">2.5%</span>
+                            <span class="info-item__name">ИПОТЕКА ОТ <br> 2.5%</span>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-        <img class="promo-img" src="img/promo/01.png" alt="">
-    </section>
+            <img class="promo-img" src="img/promo/01.png" alt="">
+        </section>
+        <section class="houses">
+            <div class="swiper houses-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide house">
+                        <img class="house-img" src="img/houses/01.png" alt="">
+                        <h2 class="house-name">КАРКАСНЫЕ ДОМА</h2>
+                    </div>
+                    <div class="swiper-slide house">
+                        <img class="house-img" src="img/houses/02.png" alt="">
+                        <h2 class="house-name">КАМЕННЫЕ ДОМА</h2>
+                    </div>
+                    <div class="swiper-slide house">
+                        <img class="house-img" src="img/houses/03.png" alt="">
+                        <h2 class="house-name">ДОМА ИЗ БРУСА</h2>
+                    </div>
+                    <div class="swiper-slide house">
+                        <img class="house-img" src="img/houses/04.png" alt="">
+                        <h2 class="house-name">БАНИ ИЗ БРУСА</h2>
+                    </div>
+                    <div class="swiper-slide house">
+                        <img class="house-img" src="img/houses/05.png" alt="">
+                        <h2 class="house-name">КАРКАСНЫЕ БАНИ</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/app.js"></script>
 </body>
 </html>
