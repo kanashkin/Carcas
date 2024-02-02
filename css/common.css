@@ -85,9 +85,15 @@ span {
     max-width: fit-content;
 }
 
-.click-btn.light-green {
+.click-btn.dark-green {
     background: rgb(60, 78, 61);
     border: 1px solid rgb(60, 78, 61);
+    color: rgb(255, 255, 255);
+}
+
+.click-btn.light-green {
+    background: rgb(127, 165, 129);
+    border: 1px solid rgba(127, 165, 129);
     color: rgb(255, 255, 255);
 }
 
