@@ -445,3 +445,131 @@
     gap: 25px;
     align-items: center;
 }
+
+/* STAGES SECTION */
+
+.stages {
+    margin-top: 300px;
+}
+
+.stages-title {
+    color: rgb(33, 46, 33);
+    font-family: 'Geist Variable', sans-serif;
+    font-size: 96px;
+    font-weight: 300;
+    display: flex;
+    justify-content: space-between;
+}
+
+.stages-title::after {
+    content: "КАК ПРОХОДИТ СТРОИТЕЛЬТВО";
+    color: rgba(33, 46, 33, 0.51);
+    font-family: 'Geist Variable', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.stages__list {
+    margin-top: 103px;
+    max-width: 1270px;
+    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) auto;
+}
+
+.stages__item {
+    max-width: 312px;
+    border: 1px solid rgb(33, 46, 33);
+    padding: 28px 26px 0 26px;
+    display: flex;
+    flex-direction: column;
+    height: 333px;
+    justify-content: space-between;
+}
+
+.stages__item-title {
+    color: rgb(33, 46, 33);
+    font-family: 'Geist Variable', sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.stages__item-prepayment {
+    color: rgb(33, 46, 33);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 100%;
+}
+
+.stages__item-descr {
+    color: rgb(33, 46, 33);
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 130%;
+}
+
+.stages__item-number {
+    color: rgba(33, 46, 33, 0.21);
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 100%;
+    align-self: flex-end;
+}
+
+.stages__pre {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.stages__pre-title {
+    color: rgba(33, 46, 33, 0.51);
+    font-family: 'Geist Variable', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 100%;
+}
+
+.stages__item:nth-child(6),
+.stages__item:nth-child(7),
+.stages__item:nth-child(8) {
+    grid-row: 3;
+    justify-self: end;
+}
+
+.stages__item:nth-child(6) {
+    border: none;
+    padding: 0;
+}
+
+.stages__finish {
+    border: none;
+    background: url(../img/index/stages/bg.png);
+}
+
+.stages__finish .stages__item-title {
+    color: #fff;
+}
+
+.stages__finish .stages__item-number {
+    text-shadow: none;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+}
+
+.stages__item-img {
+    display: flex;
+    justify-content: center;
+}
+
+.stages__btns {
+    margin-top: 104px;
+    gap: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.stages-btn {
+    width: 100%;
+    max-width: 50%;
+}
