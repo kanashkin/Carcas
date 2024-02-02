@@ -1,0 +1,257 @@
+/* Base styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap');
+
+@font-face {
+    font-family: 'Geist Variable';
+    src: url(../fonts/Geist-UltraLight.woff2) format('woff2');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Geist Variable';
+    src: url(../fonts/Geist-Light.woff2) format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Geist Variable';
+    src: url(../fonts/Geist-Regular.woff2) format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    background-repeat: no-repeat;
+}
+
+input {
+    width: 100%;
+}
+
+button,
+input,
+textarea,
+select,
+option {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-flex;
+}
+
+li {
+    display: inline-flex;
+    list-style: none;
+}
+
+span {
+    font-family: inherit;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+.right-container {
+    max-width: 100%;
+    padding: 0 50px 0 221px;
+}
+
+/* --- BUTTONS --- */
+
+.click-btn {
+    padding: 22px 27px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 130%;
+    max-width: fit-content;
+}
+
+.click-btn.light-green {
+    background: rgb(60, 78, 61);
+    border: 1px solid rgb(60, 78, 61);
+    color: rgb(255, 255, 255);
+}
+
+.click-btn.green-border {
+    color: rgb(43, 60, 44);
+    border: 1px solid rgb(96, 127, 86);
+}
+
+.consult-btn {
+    color: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
+}
+
+/* --- BUTTONS --- */
+
+/* --- NAVS --- */
+
+.nav__list-item {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 130%;
+    transition: .4s all;
+}
+
+.nav__list-item.active,
+.nav__list-item:hover {
+    font-weight: 500;
+}
+
+/* --- NAVS --- */
+
+/* PROJECTS CARDS */
+
+.project {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.project-price {
+    color: rgb(33, 46, 33);
+    font-weight: 300;
+    line-height: 130%;
+}
+
+.project-price.big {
+    font-size: 48px;
+}
+
+.project-price.default {
+    font-size: 40px;
+}
+
+.project-price .ruble {
+    color: rgba(10, 10, 10, 0.3);
+}
+
+.project__factors {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.project__factors-item {
+    padding: 1px 5px;
+    border: 1px solid rgb(33, 46, 33);
+    color: rgb(33, 46, 33);
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 130%;
+}
+
+/* SWIPER ELEMS */
+
+.swiper-control {
+    margin-top: 61px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.swiper-numbers {
+    color: rgba(10, 10, 10, 0.7);
+    font-family: 'Geist Variable', sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.swiper-btns {
+    display: flex;
+    gap: 31px;
+}
+
+.swiper-btn {
+    width: 54px;
+    height: 32px;
+    border: 1px solid rgb(33, 46, 33);
+    transition: .3s all;
+}
+
+.swiper-btn:hover {
+    opacity: .7;
+}
+
+.swiper-next {
+    background: rgb(33, 46, 33);
+}
+
+.swiper-pagination {
+    width: fit-content !important;
+    position: static !important;
+    border-radius: 16px;
+    background: rgba(127, 165, 129, 0.18);
+    padding: 7px 11px;
+    display: flex;
+    gap: 11px;
+}
+
+.swiper-pagination-bullet {
+    margin: 0 !important;
+    width: 18px !important;
+    height: 18px !important;
+    background: rgb(127, 165, 129, 1) !important;
+    opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active {
+    background: rgb(33, 46, 33) !important;
+}
+
+/* HEADER */
+
+.header {
+    position: absolute;
+    z-index: 1;
+    top: 26px;
+    left: 0;
+    width: 100%;
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 36px;
+    height: 36px;
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+}
+
+.header__nav__list {
+    display: inline-flex;
+    gap: 100px;
+}
+
+.header-phone {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 130%;
+}
+
+/* HEADER */
