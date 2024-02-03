@@ -82,4 +82,42 @@ window.addEventListener('DOMContentLoaded', function() {
             }
         })
     }
+
+    function faq() {
+        const triggerBtns = document.querySelectorAll('.faq__item-trigger')
+
+        triggerBtns.forEach(function(btn) {
+            btn.addEventListener('click', function() {
+                let parentItem = btn.closest('.faq__item')
+                let blockAnswer = parentItem.querySelector('.faq__item-answer')
+
+                if (!parentItem.classList.contains('active')) {
+                    blockAnswer.style.height = blockAnswer.scrollHeight + 'px'
+                } else {
+                    blockAnswer.style.height = ''
+                }
+
+                parentItem.classList.toggle('active')
+            })
+        })
+    }
+
+    faq()
+
+    function addFaqNumeration() {
+        const faqBlocks = document.querySelectorAll('.faq__item')
+
+        faqBlocks.forEach(function(block) {
+            let blockNumber = block.querySelector('.faq__item-number')
+            let blockIndex = Array.from(faqBlocks).indexOf(block) + 1
+
+            if (blockIndex < 10) {
+                blockIndex = '0' + blockIndex
+            }
+
+            blockNumber.textContent = blockIndex
+        })
+    }
+
+    addFaqNumeration()
 })
