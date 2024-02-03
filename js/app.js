@@ -30,6 +30,28 @@ window.addEventListener('DOMContentLoaded', function() {
             },
         },
     })
+
+    const reviewsSwiper = new Swiper('.reviews-swiper', {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        speed: 700,
+        loop: true,
+        autoplay: {
+            delay: 1000
+        },
+        pagination: {
+            el: '.reviews-pagination',
+        },
+        navigation: {
+            prevEl: '.reviews-prev',
+            nextEl: '.reviews-next',
+        },
+        on: {
+            slideChange: function () {
+                updateNumberPagination(this)
+            },
+        },
+    })
     
     function addNumberPagination() {
         const swiperControLBlocks = document.querySelectorAll('.swiper-control')
