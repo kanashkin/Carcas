@@ -595,7 +595,7 @@
                     <div class="quiz-title_signature">Дом Строй</div>
                 </div>
                 <div class="quiz__block">
-                    <div class="quiz__item">
+                    <div class="quiz__item active" data-question="Тип дома">
                         <div class="quiz__header">
                             <div class="quiz-question">
                                 Какой тип дома вы хотите построить
@@ -626,11 +626,174 @@
                             </div>
                         </div>
                         <div class="quiz__btns">
+                            <button class="quiz-next quiz-btn">ДАЛЕЕ</button>
+                        </div>
+                    </div>
+                    <div class="quiz__item" data-question="Наличие участка">
+                        <div class="quiz__header">
+                            <div class="quiz-question">
+                                Есть ли у вас участок?
+                            </div>
+                            <span class="quiz-stage">2/6</span>
+                        </div>
+                        <div class="quiz__answers">
+                            <div class="quiz__answer">
+                                <label class="quiz-checkbox__wrapper">
+                                    <input class="quiz-checkbox" type="radio" name="plot">
+                                    <span class="quiz-checkbox-title">Да</span>
+                                </label>
+                            </div>
+                            <div class="quiz__answer">
+                                <label class="quiz-checkbox__wrapper">
+                                    <input class="quiz-checkbox" type="radio" name="plot">
+                                    <span class="quiz-checkbox-title">Нет</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="quiz__btns">
+                            <button class="quiz-prev quiz-btn">НАЗАД</button>
+                            <button class="quiz-next quiz-btn">ДАЛЕЕ</button>
+                        </div>
+                    </div>
+                    <div class="quiz__item" data-question="Площадь">
+                        <div class="quiz__header">
+                            <div class="quiz-question">
+                                Какая общая площадь дома вам нужна ?
+                            </div>
+                            <span class="quiz-stage">3/6</span>
+                        </div>
+                        <div class="quiz__answers">
+                            <div class="quiz__answer">
+                                <label class="quiz-checkbox__wrapper">
+                                    <input class="quiz-checkbox" type="radio" name="square">
+                                    <span class="quiz-checkbox-title">100кв.м</span>
+                                </label>
+                            </div>
+                            <div class="quiz__answer">
+                                <label class="quiz-checkbox__wrapper">
+                                    <input class="quiz-checkbox" type="radio" name="square">
+                                    <span class="quiz-checkbox-title">100-150кв.м</span>
+                                </label>
+                            </div>
+                            <div class="quiz__answer">
+                                <label class="quiz-checkbox__wrapper">
+                                    <input class="quiz-checkbox" type="radio" name="square">
+                                    <span class="quiz-checkbox-title">Более 150кв.м.</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="quiz__btns">
+                            <button class="quiz-prev quiz-btn">НАЗАД</button>
+                            <button class="quiz-next quiz-btn">ДАЛЕЕ</button>
+                        </div>
+                    </div>
+                    <div class="quiz__item" data-question="Кол-во этажей">
+                        <div class="quiz__header">
+                            <div class="quiz-question">
+                                Какое количество этажей должно быть в доме ?
+                            </div>
+                            <span class="quiz-stage">1/6</span>
+                        </div>
+                        <div class="quiz__answers">
+                            <div class="quiz__answer">
+                                <label class="quiz-checkbox__wrapper">
+                                    <input class="quiz-checkbox" type="radio" name="floors">
+                                    <span class="quiz-checkbox-title">1</span>
+                                </label>
+                                <img class="quiz__answer-img" src="img/index/quiz/question-4/01.png" alt="">
+                            </div>
+                            <div class="quiz__answer">
+                                <label class="quiz-checkbox__wrapper">
+                                    <input class="quiz-checkbox" type="radio" name="floors">
+                                    <span class="quiz-checkbox-title">1 с мансардой</span>
+                                </label>
+                                <img class="quiz__answer-img" src="img/index/quiz/question-4/02.png" alt="">
+                            </div>
+                            <div class="quiz__answer">
+                                <label class="quiz-checkbox__wrapper">
+                                    <input class="quiz-checkbox" type="radio" name="floors">
+                                    <span class="quiz-checkbox-title">2</span>
+                                </label>
+                                <img class="quiz__answer-img" src="img/index/quiz/question-4/03.png" alt="">
+                            </div>
+                        </div>
+                        <div class="quiz__btns">
+                            <button class="quiz-prev quiz-btn">НАЗАД</button>
+                            <button class="quiz-next quiz-btn">ДАЛЕЕ</button>
+                        </div>
+                    </div>
+                    <div class="quiz__item" data-question="Коммуникации">
+                        <div class="quiz__header">
+                            <div class="quiz-question">
+                                Какие коммуникации вы хотите установить в доме ?
+                            </div>
+                            <span class="quiz-stage">5/6</span>
+                        </div>
+                        <div class="quiz__answers">
+                            <div class="quiz__answer">
+                                <label class="quiz-checkbox__wrapper">
+                                    <input class="quiz-checkbox" type="checkbox" name="communication">
+                                    <span class="quiz-checkbox-title">Отопление</span>
+                                </label>
+                            </div>
+                            <div class="quiz__answer">
+                                <label class="quiz-checkbox__wrapper">
+                                    <input class="quiz-checkbox" type="checkbox" name="communication">
+                                    <span class="quiz-checkbox-title">Кондиционирование</span>
+                                </label>
+                            </div>
+                            <div class="quiz__answer">
+                                <label class="quiz-checkbox__wrapper">
+                                    <input class="quiz-checkbox" type="checkbox" name="communication">
+                                    <span class="quiz-checkbox-title">Газ</span>
+                                </label>
+                            </div>
+                            <div class="quiz__answer">
+                                <label class="quiz-checkbox__wrapper">
+                                    <input class="quiz-checkbox" type="checkbox" name="communication">
+                                    <span class="quiz-checkbox-title">Электричество</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="quiz__btns">
+                            <button class="quiz-prev quiz-btn">НАЗАД</button>
+                            <button class="quiz-next quiz-btn">ДАЛЕЕ</button>
+                        </div>
+                    </div>
+                    <div class="quiz__item" data-question="Бюджет">
+                        <div class="quiz__header">
+                            <div class="quiz-question">
+                                Какой бюджет вы хотите выделить на строительство дома?
+                            </div>
+                            <span class="quiz-stage">6/6</span>
+                        </div>
+                        <div class="quiz__answers">
+                            <div class="quiz__answer">
+                                <label class="quiz-checkbox__wrapper">
+                                    <input class="quiz-checkbox" type="radio" name="budget">
+                                    <span class="quiz-checkbox-title">До 3 миллионов рублей</span>
+                                </label>
+                            </div>
+                            <div class="quiz__answer">
+                                <label class="quiz-checkbox__wrapper">
+                                    <input class="quiz-checkbox" type="radio" name="budget">
+                                    <span class="quiz-checkbox-title">От 3 до 6  миллионов рублей</span>
+                                </label>
+                            </div>
+                            <div class="quiz__answer">
+                                <label class="quiz-checkbox__wrapper">
+                                    <input class="quiz-checkbox" type="radio" name="budget">
+                                    <span class="quiz-checkbox-title">Более 6 миллионов рублей</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="quiz__btns">
                             <button class="quiz-prev quiz-btn">НАЗАД</button>
                             <button class="quiz-next quiz-btn">ДАЛЕЕ</button>
                         </div>
                     </div>
                 </div>
+                <p class="quiz-promotion">СКИДКУ МОЖНО ПОЛУЧИТЬ ТОЛЬКО ДО 20 ФЕВРАЛЯ</p>
             </div>
         </section>
         <section class="faq">

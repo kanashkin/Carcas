@@ -36,9 +36,9 @@ window.addEventListener('DOMContentLoaded', function() {
         spaceBetween: 30,
         speed: 700,
         loop: true,
-        // autoplay: {
-        //     delay: 1000
-        // },
+        autoplay: {
+            delay: 1000
+        },
         pagination: {
             el: '.reviews-pagination',
         },
@@ -164,4 +164,50 @@ window.addEventListener('DOMContentLoaded', function() {
     }
 
     addStarsToReview()
+
+    function quiz() {
+        const quizItems = document.querySelectorAll('.quiz__item')
+        const quizBtns = document.querySelectorAll('.quiz-btn')
+
+        let quizIndex = 0
+        const answers = {}
+
+        quizBtns.forEach(function(btn) {
+
+            btn.addEventListener('click', function() {
+                let currentInputs = quizItems[quizIndex].querySelectorAll('.quiz-checkbox')
+                let checkedInput = false
+
+                quizItems[quizIndex].classList.remove('active')
+
+                if (btn.classList.contains('quiz-next')) {
+                    let quizItemQuestion = quizItems[quizIndex].getAttribute('data-question')
+                    let answerValues = []
+
+                    currentInputs.forEach(function(inputItem) {
+
+                        if (inputItem.checked) {
+                            let answerValue = inputItem.nextElementSibling.textContent
+                            answerValues.push(answerValue)
+                            checkedInput = true
+                        }
+                    })
+
+                    if (checkedInput) {
+                        quizIndex += 1
+                        answers[quizItemQuestion] = answerValues
+                    }
+
+                } else if (btn.classList.contains('quiz-prev')) {
+                    quizIndex -= 1
+                }
+
+                quizItems[quizIndex].classList.add('active')
+
+                console.log(answers);
+            })
+        })
+    }
+
+    quiz()
 })

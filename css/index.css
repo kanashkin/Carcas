@@ -681,6 +681,14 @@
     line-height: 100%;
 }
 
+.quiz-promotion {
+    margin-top: 77px;
+    color: rgb(255, 255, 255);
+    font-family: 'Geist Variable', sans-serif;
+    font-size: 44px;
+    font-weight: 300;
+}
+
 .quiz__block {
     margin-top: 77px;
     width: 656px;
@@ -691,9 +699,13 @@
 
 .quiz__item {
     height: 100%;
-    display: flex;
     flex-direction: column;
     justify-content: space-between;
+    display: none;
+}
+
+.quiz__item.active {
+    display: flex;
 }
 
 .quiz__header {
