@@ -47,7 +47,7 @@
                     <p class="promo-descr">
                         Ваша мечта - наша реальность: Строительство каркасных домов и бань - быстро и качественно
                     </p>
-                    <button class="consult-btn promo-btn click-btn">БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ</button>
+                    <button class="consult-btn promo-btn click-btn popup-open-btn">БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ</button>
                     <ul class="promo__info">
                         <li class="promo__info-item info-item">
                             <span class="info-item__value">5</span>
@@ -203,9 +203,9 @@
                             Строительство без забот с нами
                         </h4>
                         <form class="consultation-form" action="">
-                            <input class="consultation-form__input" type="text" placeholder="Имя">
-                            <input class="consultation-form__input" type="text" placeholder="Телефон">
-                            <button type="submit" class="click-btn consult-btn">Получить консультацию</button>
+                            <input class="consultation-form__input" type="text" placeholder="Имя" required>
+                            <input class="consultation-form__input" type="text" placeholder="Телефон" required>
+                            <button type="submit" class="click-btn consult-btn popup-open-btn">Получить консультацию</button>
                             <img class="consultation-form__image" src="img/index/about/consult-phone.png" alt="">
                         </form>
                     </div>
@@ -282,7 +282,7 @@
                 <div class="projects__footer">
                     <div class="projects-btns">
                         <button class="click-btn dark-green">Больше проектов</button>
-                        <button class="click-btn light-green">Бесплатная консультация</button>
+                        <button class="click-btn light-green popup-open-btn">Бесплатная консультация</button>
                     </div>
                     <p class="projects-completed">Завершенные проекты</p>
                 </div>
@@ -338,7 +338,7 @@
             </ul>
             <div class="stages__btns right-container">
                 <button class="stages-btn click-btn light-green">ПОДРОБНЕЕ</button>
-                <button class="stages-btn click-btn dark-green">ПОЛУЧИТЬ БЕСПЛАТНУЮ КОНСУЛЬТАЦИЮ</button>
+                <button class="stages-btn click-btn dark-green popup-open-btn">ПОЛУЧИТЬ БЕСПЛАТНУЮ КОНСУЛЬТАЦИЮ</button>
             </div>
         </section>
         <section class="guarantee">
@@ -503,7 +503,7 @@
                 <p class="faq-descr">
                     НЕ ОСТАВЛЯЙТЕ СВОИ ВОПРОСЫ БЕЗ ОТВЕТОВ,  ОСТАВЬТЕ ЗВАЯВКУ , НАШ МЕНЕДЖЕР ПЕРЕЗВОНИТ ВАМ И БЕСПЛАТНО ПРОКОНСУЛЬТИРУЕТ
                 </p>
-                <button class="click-btn faq-btn">Оставить заявку</button>
+                <button class="click-btn faq-btn popup-open-btn">Оставить заявку</button>
             </div>
             <div class="faq__wrapper right-container">
                 <div class="faq__show">
@@ -631,8 +631,8 @@
                         <p class="feedback__form-title">
                             Оставьте заявку на обратный звонок: Консультация эксперта по телефону - бесплатно
                         </p>
-                        <input class="feedback__form-input" type="text" placeholder="Имя">
-                        <input class="feedback__form-input" type="text" placeholder="Телефон">
+                        <input class="feedback__form-input" type="text" placeholder="Имя" required>
+                        <input class="feedback__form-input" type="text" placeholder="Телефон" required>
                         <button type="submit" class="click-btn consult-btn">Начать проект</button>
                         <img class="" src="img/feedback/form-img.png" alt="">
                     </form>
@@ -660,6 +660,29 @@
         </div>
         <img class="footer-img" src="img/footer/footer-img.png" alt="">
     </footer>
+
+    <div class="overlay">
+        <div class="popup">
+            <button class="popup-close"></button>
+            <form class="popup__form" action="">
+                <p class="popup__form-title">
+                    Наша команда поможет вам выбрать проект, который подходит именно вам
+                </p>
+                <p class="popup__form-descr">
+                    Выбор проекта может быть сложным, но не для наших экспертов. Оставьте заявку и получите квалифицированную помощь в выборе проекта
+                </p>
+                <input class="popup__form-input" type="text" placeholder="Имя" required>
+                <input class="popup__form-input" type="text" placeholder="Телефон" required>
+                <button class="click-btn popup__form-btn">Получить бесплатную консультацию</button>
+            </form>
+            <div class="popup__thanks">
+                <p class="popup__thanks-title">
+                    Наш эксперт позвонит вам в течение 5 минут 
+                </p>
+                <button class="click-btn popup__form-btn thanks-btn">Ок</button>
+            </div>
+        </div>
+    </div>
 
     <script src="js/app.js"></script>
 </body>

@@ -120,4 +120,30 @@ window.addEventListener('DOMContentLoaded', function() {
     }
 
     addFaqNumeration()
+
+    function popup() {
+        const openBtns = document.querySelectorAll('.popup-open-btn')
+        const popup = document.querySelector('.overlay')
+        const popupForm = popup.querySelector('.popup__form')
+        const popupFormBtn = popupForm.querySelector('.popup__form-btn')
+        const popupThanks = popup.querySelector('.popup__thanks')
+        const closeBtn = popup.querySelector('.popup-close')
+
+        openBtns.forEach(function(btn) {
+            btn.addEventListener('click', function() {
+                popup.classList.add('active')
+                popupFormBtn.addEventListener('click', function() {
+                    
+                })
+            })
+        })
+
+        closeBtn.addEventListener('click', function() {
+            popup.classList.remove('active')
+            popupForm.classList.remove('unactive')
+            popupThanks.classList.remove('active')
+        })
+    }
+
+    popup()
 })
