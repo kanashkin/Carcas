@@ -423,3 +423,50 @@ span {
     border: 1px solid #000;
     text-transform: uppercase;
 }
+
+/* FOOTER */
+
+.footer {
+    margin-top: 80px;
+    padding: 48px 0 30px;
+    background: rgb(127, 165, 129);
+    position: relative;
+}
+
+.footer-title {
+    color: rgb(33, 46, 33);
+    font-family: 'Geist Variable', sans-serif;
+    font-size: 213.82px;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.footer__nav {
+    margin-top: 115px;
+    max-width: 30%;
+}
+
+.footer__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 87px;
+    row-gap: 40px;
+}
+
+.footer__list-item,
+.footer-info {
+    color: rgb(33, 46, 33);
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 130%;
+}
+
+.footer-info {
+    margin-top: 136px;
+}
+
+.footer-img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
