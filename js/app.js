@@ -36,9 +36,9 @@ window.addEventListener('DOMContentLoaded', function() {
         spaceBetween: 30,
         speed: 700,
         loop: true,
-        autoplay: {
-            delay: 1000
-        },
+        // autoplay: {
+        //     delay: 1000
+        // },
         pagination: {
             el: '.reviews-pagination',
         },
@@ -146,4 +146,22 @@ window.addEventListener('DOMContentLoaded', function() {
     }
 
     popup()
+
+    function addStarsToReview() {
+        const reviews = document.querySelectorAll('.review')
+
+        reviews.forEach(function(review) {
+            const reviewRateNumber = review.querySelector('.review__rate-number').textContent
+            const reviewRateStars = review.querySelectorAll('svg')
+
+            reviewRateStars.forEach(function(star) {
+                const starIndex = Array.from(reviewRateStars).indexOf(star) + 1
+                if (starIndex <= reviewRateNumber) {
+                    star.classList.add('active')
+                }
+            })
+        })
+    }
+
+    addStarsToReview()
 })
