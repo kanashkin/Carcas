@@ -32,3 +32,222 @@
 .promo-img {
     margin-top: -60px;
 }
+
+/* ADDITIONAL */
+
+.additional {
+    margin-top: 105px;
+}
+
+.additional__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.additional-title {
+    color: rgb(0, 0, 0);
+    font-family: 'Geist Variable', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+/* LIDERS */
+
+.liders {
+    margin-top: 300px;
+}
+
+.liders-title {
+    color: rgb(33, 46, 33);
+    font-family: 'Geist Variable', sans-serif;
+    font-size: 96px;
+    font-weight: 400;
+    line-height: 100%;
+    text-align: center;
+}
+
+.liders__factors {
+    margin-top: 51px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.liders__factor {
+    padding: 14px 40px 23px 40px;
+    display: flex;
+    align-items: center;
+    gap: 71px;
+    border: 1px solid rgb(33, 46, 33);
+}
+
+.liders__factor:nth-child(2) {
+    justify-content: flex-end;
+}
+
+.liders__factor-text {
+    color: rgb(33, 46, 33);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 130%;
+    max-width: 75%;
+}
+
+/* WHY SECTION */
+
+.why {
+    margin-top: 300px;
+}
+
+.why__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 69px;
+}
+
+.why-title {
+    align-self: flex-end;
+    color: rgb(33, 46, 33);
+    font-family: 'Geist Variable', sans-serif;
+    font-size: 110px;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.why__list {
+    align-self: flex-end;
+    max-width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.why__item {
+    padding: 20px 11px 10px;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    display: inline-flex;
+    align-items: center;
+
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 130%;
+}
+
+.why__item:first-child {
+    padding-top: 0;
+}
+
+.why__item-name span {
+    font-weight: 400;
+}
+
+.why__item-show {
+    display: flex;
+    align-items: center;
+    gap: 38px;
+    width: 50%;
+}
+
+.why__item-name {
+    width: 100%;
+    max-width: 70%;
+}
+
+.why__item-texts {
+    width: 50%;
+    display: flex;
+    gap: 38px;
+}
+
+.why__item-text {
+    max-width: 50%;
+}
+
+
+/* MATERIALS */
+
+.materials {
+    position: relative;
+    margin-top: 538px;
+    padding: 218px 0 75px;
+    background: #3C4E3D;
+}
+
+.materials-title {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: 'Geist Variable', sans-serif;
+    font-size: 110px;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.materials-img {
+    position: absolute;
+    left: 45%;
+    top: -238px;
+}
+
+.advantages__foundation {
+    margin-top: 137px;
+}
+
+.foundation__price-item {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.foundation__price-item.active {
+    color: #ffffff;
+}
+
+.advantages-title {
+    color: #ffffff;
+}
+
+.advantages-text {
+    color: #ffffff;
+}
+
+.materials__list {
+    margin-top: 137px;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(2, 35%);
+    row-gap: 73px;
+    padding: 30px 49px 17px;
+}
+
+.materials__item {
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.materials__item-text {
+    font-weight: 300;
+    max-width: 80%;
+}
+
+.materials__item-text span {
+    font-weight: 500;
+}
+
+.materials__item-text_title {
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+.materials__item-img {
+    width: 41px;
+    height: 41px;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.materials__item-img {
+    max-width: 70%;
+    object-fit: contain;
+}

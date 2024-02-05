@@ -143,6 +143,9 @@ span {
     font-size: 64px;
     font-weight: 400;
     line-height: 100%;
+}
+
+.materials__projects {
     text-align: center;
 }
 
@@ -689,4 +692,119 @@ span {
     font-size: 32px;
     font-weight: 400;
     line-height: 130%;
+}
+
+/* ADDITIONAL SERVICES */
+
+.add__services {
+    width: 100%;
+    display: flex;
+    gap: 73px;
+}
+
+.add__services.black {
+    color: #000000;
+    max-width: 55%;
+    text-align: center;
+}
+
+.add__services.white {
+    color: #ffffff;
+}
+
+.add__services-item {
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.add__services-item_name {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 130%;
+}
+
+.add__services-item_descr {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 130%;
+}
+
+/* MATERIALS BLOCKS */
+
+.advantages-title {
+    font-family: 'Geist Variable', sans-serif;
+    font-size: 86px;
+    font-weight: 400;
+    line-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.advantages-text {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 130%;
+}
+
+.advantages-subtitle span {
+    font-weight: 600;
+}
+
+.advantages-text {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 130%;
+}
+
+.advantages-text.white {
+    color: #ffffff;
+}
+
+.advantages-subtitle {
+    margin-top: 8px;
+}
+
+.foundation__list {
+    margin-top: 36px;
+    display: flex;
+    flex-direction: column;
+}
+
+.foundation__item {
+    display: inline-flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(33, 46, 33);
+    padding: 20.5px 0 6.5px;
+}
+
+.foundation__item-name {
+    padding-left: 45px;
+    max-width: 30%;
+    width: 100%;
+}
+
+.foundation__price {
+    display: inline-flex;
+    gap: 7px;
+    font-size: 29px;
+    line-height: 100%;
+}
+
+.foundation__price-item {
+    color: rgba(10, 10, 10, 0.3);
+}
+
+.foundation__price-item.active {
+    color: #212E21;
+}
+
+.foundation__item-text {
+    display: block;
+    margin: 0 0 0 auto;
+    max-width: 50%;
+    width: 100%;
 }
