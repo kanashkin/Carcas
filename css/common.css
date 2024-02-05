@@ -131,7 +131,99 @@ span {
 
 /* --- NAVS --- */
 
-/* PROJECTS CARDS */
+/* PROJECTS SECTION */
+
+.projects {
+    margin-top: 300px;
+}
+
+.projects-title {
+    color: rgb(33, 46, 33);
+    font-family: 'Geist Variable', sans-serif;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 100%;
+    text-align: center;
+}
+
+.projects-title img:nth-child(3) {
+    position: relative;
+    top: 25px;
+}
+
+.projects-title__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.projects__wrapper {
+    margin-top: 50px;
+    display: flex;
+    gap: 30px;
+}
+
+.project-photo {
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.index__projects .projects-title {
+    color: rgba(33, 46, 33, 0.56);
+    font-family: 'Geist Variable', sans-serif;
+    font-size: 74px;
+    font-weight: 200;
+}
+
+.index__projects .projects-title.dark {
+    color: rgb(33, 46, 33);
+    font-weight: 400;
+}
+
+.projects-swiper {
+    margin: 48px 0 0 221px;
+}
+
+.projects__footer {
+    margin-top: 50px;
+    display: flex;
+    gap: 22px;
+    justify-content: space-between;
+}
+
+.projects__footer>button {
+    max-width: 100%;
+    width: 100%;
+}
+
+.index__projects .projects__footer {
+    margin-top: 61px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.projects-btns {
+    display: flex;
+    gap: 25px;
+}
+
+.projects-completed {
+    color: rgb(60, 78, 61);
+    font-family: 'Geist Variable', sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.projects-banner {
+    margin-top: 76px;
+    color: rgb(33, 46, 33);
+    font-family: 'Geist Variable', sans-serif;
+    font-size: 87.92px;
+    font-weight: 500;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
 
 .project {
     display: flex;
@@ -143,17 +235,22 @@ span {
     color: rgb(33, 46, 33);
     font-weight: 300;
     line-height: 130%;
+    font-size: 40px;
 }
 
 .project-price.big {
     font-size: 48px;
 }
 
+.project-price.small {
+    font-size: 24px;
+}
+
 .project-price.default {
     font-size: 40px;
 }
 
-.project-price .ruble {
+.project-price .gray {
     color: rgba(10, 10, 10, 0.3);
 }
 
@@ -282,7 +379,7 @@ span {
     font-size: 96px;
 }
 
-.index__reviews .review-avatar {
+.no-avatar .review-avatar {
     display: none;
 }
 
@@ -379,7 +476,11 @@ span {
 /* FEEDBACK */
 
 .feedback {
-    margin-top: 300px;
+    margin: 300px 0;
+}
+
+.index__feedback {
+    margin-bottom: 0;
 }
 
 .feedback__wrapper {

@@ -400,7 +400,7 @@
     justify-content: space-between;
 }
 
-.projects-title {
+.index__projects .projects-title {
     color: rgba(33, 46, 33, 0.56);
     font-family: 'Geist Variable', sans-serif;
     font-size: 74px;
