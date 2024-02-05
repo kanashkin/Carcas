@@ -50,3 +50,121 @@
     right: 0;
     bottom: 0;
 }
+
+/* ADVANTAGES */
+
+.advantages {
+    margin-top: 113px;
+}
+
+.advantages-title {
+    color: rgb(33, 46, 33);
+    font-family: 'Geist Variable', sans-serif;
+    font-size: 86px;
+    font-weight: 400;
+    line-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.advantages-text {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 130%;
+}
+
+.advantages-subtitle span {
+    font-weight: 600;
+}
+
+.advantages__stage {
+    color: rgba(33, 46, 33, 0.25);
+    font-family: 'Geist Variable', sans-serif;
+    font-size: 87px;
+    font-weight: 100;
+    line-height: 100%;
+}
+
+.advantages__list__wrapper {
+    margin-top: 42px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.advantages__list {
+    max-width: 50%;
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+}
+
+.advantages__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 0;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.advantages__item-text span {
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.advantages__item-text {
+    font-weight: 300;
+    max-width: 90%;
+    width: 100%;
+}
+
+.advantages__foundation {
+    margin-top: 300px;
+}
+
+.advantages-subtitle {
+    margin-top: 8px;
+}
+
+.foundation__list {
+    margin-top: 36px;
+    display: flex;
+    flex-direction: column;
+}
+
+.foundation__item {
+    display: inline-flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(33, 46, 33);
+    padding: 20.5px 0 6.5px;
+}
+
+.foundation__item-name {
+    padding-left: 45px;
+    max-width: 30%;
+    width: 100%;
+}
+
+.foundation__price {
+    display: inline-flex;
+    gap: 7px;
+    font-size: 29px;
+    line-height: 100%;
+}
+
+.foundation__price-item {
+    color: rgba(10, 10, 10, 0.3);
+}
+
+.foundation__price-item.active {
+    color: #212E21;
+}
+
+.foundation__item-text {
+    display: block;
+    margin: 0 0 0 auto;
+    max-width: 50%;
+    width: 100%;
+}
