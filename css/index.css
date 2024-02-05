@@ -389,63 +389,6 @@
     transform: translateY(-50%);
 }
 
-/* PROJECTS SECTION */
-
-.projects {
-    margin-top: 300px;
-}
-
-.projects-title__wrapper {
-    display: flex;
-    justify-content: space-between;
-}
-
-.index__projects .projects-title {
-    color: rgba(33, 46, 33, 0.56);
-    font-family: 'Geist Variable', sans-serif;
-    font-size: 74px;
-    font-weight: 200;
-}
-
-.projects-title.dark {
-    color: rgb(33, 46, 33);
-    font-weight: 400;
-}
-
-.projects-swiper {
-    margin: 48px 0 0 221px;
-}
-
-.projects__footer {
-    margin-top: 61px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-}
-
-.projects-btns {
-    display: flex;
-    gap: 25px;
-}
-
-.projects-completed {
-    color: rgb(60, 78, 61);
-    font-family: 'Geist Variable', sans-serif;
-    font-size: 20px;
-    font-weight: 200;
-}
-
-.projects-banner {
-    margin-top: 76px;
-    color: rgb(33, 46, 33);
-    font-family: 'Geist Variable', sans-serif;
-    font-size: 87.92px;
-    font-weight: 500;
-    display: flex;
-    gap: 25px;
-    align-items: center;
-}
-
 /* STAGES SECTION */
 
 .stages {

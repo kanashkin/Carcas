@@ -375,7 +375,8 @@ span {
     line-height: 100%;
 }
 
-.index__reviews .reviews-title {
+.index__reviews .reviews-title,
+.materials__reviews .reviews-title {
     font-size: 96px;
 }
 
