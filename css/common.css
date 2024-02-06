@@ -340,6 +340,14 @@ span {
     width: 100%;
 }
 
+.header.black .logo {
+    background: #000;
+}
+.header.black .header-phone,
+.header.black .nav__list-item {
+    color: #000;
+}
+
 .header__wrapper {
     display: flex;
     justify-content: space-between;

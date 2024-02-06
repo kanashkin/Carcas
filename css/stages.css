@@ -1,0 +1,126 @@
+/* STAGES SECTION */
+
+.stages {
+    padding-top: 106px;
+}
+
+.stages-img {
+    width: 100%;
+}
+
+.stages__header {
+    margin-top: 23px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 31px;
+    text-align: center;
+}
+
+.stages-title {
+    color: rgb(33, 46, 33);
+    font-family: 'Geist Variable', sans-serif;
+    font-size: 169px;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.stages-subtitle {
+    color: rgb(33, 46, 33);
+    font-family: 'Geist Variable', sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.stages-descr {
+    max-width: 57%;
+    color: rgb(33, 46, 33);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 130%;
+}
+
+.stages__items {
+    margin-top: 70px;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.stages-item {
+    padding: 26px 29px;
+    border: 1px solid rgb(33, 46, 33);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    color: rgb(33, 46, 33);
+}
+
+.stages-item-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.stages-item__title {
+    font-family: 'Geist Variable', sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.stages-item__prepayment {
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 130%;
+}
+
+.stages-item__descr {
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 130%;
+}
+
+.stages-item__number {
+    padding-top: 24px;
+    display: block;
+    margin: auto 0 0 0;
+    font-family: 'Geist Variable', sans-serif;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.stages__items article:nth-child(8),
+.stages__items article:nth-child(9),
+.stages__items article:nth-child(10),
+.stages__items article:nth-child(11) {
+    grid-row: 3;
+}
+
+.stages-item.green {
+    border: none;
+    background: #3C4E3D;
+    color: #ffffff;
+}
+
+.stages-item.green img {
+    display: block;
+    object-fit: contain;
+    margin: 25px auto 0 auto;
+}
+
+.stages-btn {
+    margin-top: 48px;
+    width: 100%;
+    padding: 38.5px;
+    background: #3C4E3D;
+    color: rgb(255, 255, 255);
+    font-family: 'Geist Variable', sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+}
