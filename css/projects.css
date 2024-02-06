@@ -1,0 +1,45 @@
+/* PROMO SECTION */
+
+.promo {
+    padding: 124px 0 70px;
+    background: #3C4E3D;
+    position: relative;
+}
+
+.promo-img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.promo__titles {
+    display: flex;
+    justify-content: space-between;
+}
+
+.promo-subtitle {
+    color: rgb(255, 255, 255);
+    font-family: 'Geist Variable', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 100%;
+}
+
+.promo-title {
+    color: rgb(255, 255, 255);
+    font-size: 128px;
+    font-weight: 500;
+    line-height: 100%;
+    width: fit-content;
+}
+
+.promo-projects_amount {
+    display: block;
+    width: fit-content;
+    margin: 270px 0 0 auto;
+    color: rgb(255, 255, 255);
+    font-family: 'Geist Variable', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 100%;
+}
