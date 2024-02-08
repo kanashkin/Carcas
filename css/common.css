@@ -128,10 +128,15 @@ li {
     font-weight: 200;
     line-height: 130%;
     transition: .4s all;
+    border-bottom: 1px solid transparent;
+    max-width: fit-content;
 }
 
-.nav__list-item.active,
 .nav__list-item:hover {
+    border-bottom: 1px solid #ffffff;
+}
+
+.nav__list-item.active {
     font-weight: 500;
 }
 
