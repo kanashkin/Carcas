@@ -3,9 +3,6 @@ window.addEventListener('DOMContentLoaded', function() {
         slidesPerView: 4,
         spaceBetween: 30,
         loop: true,
-        autoplay: {
-            delay: 1000
-        },
         speed: 700,
     })
     
@@ -13,9 +10,6 @@ window.addEventListener('DOMContentLoaded', function() {
         slidesPerView: 3,
         spaceBetween: 30,
         loop: true,
-        autoplay: {
-            delay: 1000
-        },
         speed: 700,
         pagination: {
             el: '.projects-pagination',
@@ -36,9 +30,6 @@ window.addEventListener('DOMContentLoaded', function() {
         spaceBetween: 30,
         speed: 700,
         loop: true,
-        autoplay: {
-            delay: 1000
-        },
         pagination: {
             el: '.reviews-pagination',
         },
@@ -210,4 +201,21 @@ window.addEventListener('DOMContentLoaded', function() {
     }
 
     quiz()
+
+    function housePhotosSlides() {
+        const photoItems = document.querySelectorAll('.house-photo')
+        const currentPhotoItem = document.querySelector('.house__photos-current')
+
+        let currentSrc = photoItems[0].getAttribute('src')
+        currentPhotoItem.setAttribute('src', currentSrc)
+
+        photoItems.forEach(function(item) {
+            item.addEventListener('click', function() {
+                currentSrc = item.getAttribute('src')
+                currentPhotoItem.setAttribute('src', currentSrc)
+            })
+        })
+    }
+
+    housePhotosSlides()
 })

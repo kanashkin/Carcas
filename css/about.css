@@ -184,7 +184,8 @@
 
 .materials-img {
     position: absolute;
-    left: 45%;
+    left: 50%;
+    transform: translateX(-50%);
     top: -238px;
 }
 

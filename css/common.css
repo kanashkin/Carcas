@@ -23,6 +23,11 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Vetrino';
+    src: url(../fonts/Vetrino.otf) format('opentype');
+}
+
 
 *,
 *::before,
@@ -60,10 +65,6 @@ li {
     list-style: none;
 }
 
-span {
-    font-family: inherit;
-}
-
 .container {
     max-width: 100%;
     margin: 0 auto;
@@ -78,6 +79,11 @@ span {
 .right-swiper {
     margin-left: 221px;
     margin-right: 0;
+}
+
+.vetrino {
+    font-family: 'Vetrino', sans-serif;
+    font-weight: 400;
 }
 
 /* --- BUTTONS --- */
@@ -173,7 +179,7 @@ span {
 .index__projects .projects-title {
     color: rgba(33, 46, 33, 0.56);
     font-family: 'Geist Variable', sans-serif;
-    font-size: 74px;
+    font-size: 70px;
     font-weight: 200;
 }
 
@@ -183,7 +189,7 @@ span {
 }
 
 .projects-swiper {
-    margin: 48px 0 0 221px;
+    margin-top: 48px;
 }
 
 .projects__footer {
@@ -217,15 +223,36 @@ span {
     font-weight: 200;
 }
 
-.projects-banner {
+.marquee {
     margin-top: 76px;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.marquee__wrapper {
+    display: flex;
+    gap: 40px;
+}
+
+.marquee-item {
     color: rgb(33, 46, 33);
     font-family: 'Geist Variable', sans-serif;
-    font-size: 87.92px;
+    font-size: 84.11px;
     font-weight: 500;
     display: flex;
     gap: 25px;
     align-items: center;
+    white-space: nowrap;
+    animation: marquee-scroll 7s linear infinite;
+}
+
+@keyframes marquee-scroll {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(calc(-100% - 40px));
+    }
 }
 
 .project {
@@ -239,6 +266,11 @@ span {
     font-weight: 300;
     line-height: 130%;
     font-size: 40px;
+}
+
+.project-price.page {
+    margin-top: 20px;
+    font-size: 64px;
 }
 
 .project-price.big {
@@ -270,6 +302,17 @@ span {
     font-size: 20px;
     font-weight: 300;
     line-height: 130%;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.project__factors-item.bedrooms::before {
+    content: url(../img/projects/bedrooms.png);
+}
+.project__factors-item.bathrooms::before {
+    height: 20px;
+    content: url(../img/projects/bathrooms.png);
 }
 
 /* SWIPER ELEMS */
@@ -380,6 +423,7 @@ span {
 }
 
 .reviews-title {
+    font-size: 96px;
     color: rgb(0, 0, 0);
     font-family: 'Geist Variable', sans-serif;
     font-weight: 400;
@@ -504,7 +548,7 @@ span {
 .feedback-title {
     color: rgb(10, 10, 10);
     font-family: 'Geist Variable', sans-serif;
-    font-size: 57px;
+    font-size: 52.71px;
     font-weight: 300;
     line-height: 100%;
 }
@@ -707,7 +751,8 @@ span {
 .add__services {
     width: 100%;
     display: flex;
-    gap: 73px;
+    gap: 10px;
+    justify-content: space-between;
 }
 
 .add__services.black {
@@ -721,7 +766,7 @@ span {
 }
 
 .add__services-item {
-    width: 28%;
+    max-width: 28%;
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -741,14 +786,17 @@ span {
 
 /* MATERIALS BLOCKS */
 
+.advantages-title__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .advantages-title {
     font-family: 'Geist Variable', sans-serif;
     font-size: 86px;
     font-weight: 400;
     line-height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 
 .advantages-text {

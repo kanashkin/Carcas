@@ -1,0 +1,216 @@
+/* HOUSEN SECTION */
+
+.house {
+    padding-top: 124px;
+}
+
+.house__header {
+    display: flex;
+    gap: 29px;
+}
+
+.house__photos__block {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+}
+
+.house__photos {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.house-photo {
+    max-width: 100%;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.house__photos-current {
+    width: 100%;
+    object-fit: contain;
+    max-width: 73%;
+}
+
+.house__info__block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.house-name {
+    color: rgb(0, 0, 0);
+    font-family: 'Geist Variable', sans-serif;
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 130%;
+}
+
+.mortgage-btn {
+    max-width: fit-content;
+    margin-top: 20px;
+    padding: 10px 43px;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 130%;
+    background: #3C4E3D;
+}
+
+.construction__info {
+    margin: auto 0 0 0;
+}
+
+.construction__info__item {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.construction__info-title,
+.construction__info-value {
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 130%;
+}
+
+.add__list {
+    margin-top: 17px;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.add__list-item {
+    border-radius: 100px;
+    padding: 5px 10px;
+    border: 1px solid #000000;
+    color: rgb(33, 46, 33);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 130%;
+}
+
+.house__characters {
+    margin-top: 70px;
+    display: flex;
+    gap: 29px;
+}
+
+.house__characters__block {
+    width: 100%;
+}
+
+.house__characters-title {
+    color: rgb(33, 46, 33);
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 130%;
+}
+
+.characters__list {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.characters__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #212E21;
+
+    font-family: 'Geist Variable', sans-serif;
+    color: rgb(33, 46, 33);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 130%;
+}
+
+.characters__item div {
+    font-family: 'Geist Variable', sans-serif;
+}
+
+.materials__list .characters__item-value {
+    font-weight: 300;
+}
+
+/* STAGES SECTION */
+
+.stages {
+    margin-top: 300px;
+    padding: 108px 0;
+    background: #3C4E3D;
+}
+
+.stages-title {
+    color: rgb(255, 255, 255);
+    font-family: 'Geist Variable', sans-serif;
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 130%;
+}
+
+.stages__wrapper {
+    margin-top: 66px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.stages__block {
+    max-width: 50%;
+    width: 100%;
+}
+
+.stages__list {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+.stages__item {
+    padding-bottom: 10px;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #FFFFFF;
+
+    color: rgb(255, 255, 255);
+    font-family: 'Geist Variable', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 130%;
+}
+
+.stages__item-number {
+    font-weight: 300;
+}
+
+.stages__btns {
+    width: 100%;
+    margin-top: 91px;
+    display: inline-flex;
+    gap: 27px;
+}
+
+.stages-btn {
+    max-width: 100%;
+    width: 100%;
+}
+
+.stages-btn:nth-child(2) {
+    justify-content: center;
+    color: #fff;
+    border: 1px solid #FFFFFF;
+}
+
+/* PROJECTS SECTION */
+
+.single-house__projects .projects-swiper {
+    margin-left: 50px;
+}

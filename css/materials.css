@@ -95,6 +95,10 @@
     border-bottom: 1px solid rgb(0, 0, 0);
 }
 
+.advantages__item:first-child {
+    padding-top: 0;
+}
+
 .advantages__item-text span {
     font-weight: 400;
     margin-bottom: 5px;
