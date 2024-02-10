@@ -217,5 +217,32 @@ window.addEventListener('DOMContentLoaded', function() {
         })
     }
 
-    housePhotosSlides()
+    try {
+        housePhotosSlides()
+    } catch {
+
+    }
+
+    function pageScroll() {
+        const menuBtns = document.querySelectorAll('.nav__list li a')
+        
+        menuBtns.forEach(function(btn) {
+            btn.addEventListener('click', function(e) {
+                e.preventDefault()
+                const currentId = btn.getAttribute('href')
+                const currentBlock = document.querySelector(currentId)
+
+                if (currentBlock) {
+                    currentBlock.scrollIntoView({
+                        block: "center",
+                        behavior: "smooth",
+                    });
+                } else {
+                    window.location.href = currentId
+                }
+            })
+        })
+    }
+
+    pageScroll()
 })
