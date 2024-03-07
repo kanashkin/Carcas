@@ -384,6 +384,62 @@
     width: 100%;
 }
 
+/* PARTNERS SECTION */
+
+.partners {
+    margin-top: 300px;
+}
+
+.partners-title {
+    font-family: 'Geist Variable';
+    font-size: 66px;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.partners__wrapper {
+    margin-top: 50px;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.partner {
+    max-width: calc(100% / 2.75 - 30px);
+    width: 100%;
+    padding: 17px;
+    height: 283px;
+    background: rgba(60, 78, 61, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Geist Variable';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 100%;
+    color: #fff;
+}
+
+.partner:nth-child(3),
+.partner:last-child {
+    max-width: 27%;
+}
+
+.partner__header {
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.partner__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+}
+
 /* STAGES SECTION */
 
 .stages {
