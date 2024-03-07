@@ -454,11 +454,25 @@ li {
     align-items: center;
 }
 
+.logo-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 .logo {
     width: 36px;
     height: 36px;
     background: rgb(255, 255, 255);
     border-radius: 50%;
+}
+
+.logo-name {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #fff;
 }
 
 .header__nav__list {
@@ -655,15 +669,26 @@ li {
 
 .footer {
     margin-top: 80px;
-    padding: 48px 0 30px;
+    padding: 95px 0 30px;
     background: rgb(127, 165, 129);
     position: relative;
+    z-index: 6;
+}
+
+.footer-logo {
+    position: absolute;
+    right: 51px;
+    top: 95px;
+}
+
+.footer-logo img {
+    max-width: 100%;
 }
 
 .footer-title {
     color: rgb(33, 46, 33);
     font-family: 'Geist Variable', sans-serif;
-    font-size: 213.82px;
+    font-size: 118.62px;
     font-weight: 400;
     line-height: 100%;
 }

@@ -11,16 +11,27 @@
 }
 
 .promo__nav {
-    position: absolute;
-    top: -12px;
-    left: 50px;
+    position: fixed;
+    top: 152px;
+    z-index: 5;
+    left: 56px;
     max-width: 92px;
+    overflow-y: scroll;
+    max-height: 80%;
+}
+
+.promo__nav::-webkit-scrollbar {
+    display: none;
 }
 
 .promo__nav__list {
     display: flex;
     flex-direction: column;
     gap: 40px;
+}
+
+.promo__nav .nav__list-item {
+    color: rgba(144, 206, 143, 1);
 }
 
 .promo__content {
@@ -89,6 +100,20 @@
     padding-left: 221px;
 }
 
+.houses__banner {
+    margin-bottom: 43px;
+    margin-right: 50px;
+    padding: 47px;
+    background-color: rgba(60, 78, 61, 1);
+    font-family: 'Geist Variable';
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 100%;
+    color: #fff;
+    background-image: url(../img/index/houses/banner-bg.png);
+    background-position: right bottom;
+}
+
 .houses-swiper {
     max-width: 100%;
     margin: 0 0 0 auto;
@@ -125,55 +150,110 @@
     text-align: left;
 }
 
-.mortgage__factors {
-    margin-top: 51.5px;
+.mortgage__wrapper {
+    margin-top: 35px;
     display: flex;
     justify-content: space-between;
+}
+
+.mortgage__info {
+    max-width: 42.5%;
+}
+
+.mortgage__info .click-btn {
+    margin-top: 30px;
+    max-width: 100%;
+    width: 100%;
+}
+
+.mortgage__factors {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .mortgage__factors-item {
-    border-top: 1px solid rgb(43, 60, 44);
-    padding: 24px 25px;
-    width: 50%;
-    color: rgb(33, 46, 33);
     font-size: 32px;
     font-weight: 400;
-    line-height: 130%;
+    line-height: 42px;
+    color: rgba(33, 46, 33, 1);
+    position: relative;
+    padding-left: 28px;
 }
 
-.mortgage__factors-item:first-child {
-    border-right: 1px solid rgb(33, 46, 33);;
+.mortgage__factors-item::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background: rgba(33, 46, 33, 1);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
 }
 
-.mortgage__wrapper {
-    margin-top: 51px;
+.mortgage__types {
+    margin-top: 63px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.mortage__type {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgba(0, 0, 0, 1);
 }
 
-.mortgage__wrapper>div,
-.mortgage__wrapper>ul {
-    width: 50%;
-}
-
-.mortgage__block-text {
-    max-width: 245px;
-    color: rgb(33, 46, 33);
-    font-size: 16px;
+.mortgage-number,
+.mortgage-name {
+    font-size: 20px;
     font-weight: 400;
-    line-height: 130%;
+    line-height: 100%;
+    color: rgba(33, 46, 33, 1);
 }
 
-.mortgage__btns {
-    margin-top: 215px;
-    display: inline-flex;
-    gap: 38px;
+.mortgage-name {
+    flex: 1;
+    padding-left: 42px;
+}
+
+.mortgage-procent {
+    font-family: 'Geist Variable';
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 100%;
+    color: #212C22;
+}
+
+.mortgage-procent .from {
+    color: #212C22;
+    opacity: .3;
+}
+
+.mortgage__bg {
+    width: 50%;
+    background: url(../img/index/mortgage/bg.png);
+    background-size: contain;
+    background-position: right top;
+    background-repeat: no-repeat;
+}
+
+.banks-title {
+    margin-top: 35px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    color: rgba(33, 46, 33, 1)
 }
 
 .mortgage__banks {
-    display: grid;
-    grid-template-columns: repeat(3, 141px);
-    gap: 26px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .bank {
@@ -297,76 +377,19 @@
     font-weight: 500;
 }
 
-.consultation__wrapper {
-    display: flex;
-    gap: 52px;
-    margin-top: 130px;
-}
-
-.consultation {
+.consult-btn.about-consult {
+    display: block;
+    margin-top: 40px;
+    max-width: 100%;
     width: 100%;
-}
-
-.consultation-title {
-    color: rgb(255, 255, 255);
-    font-family: 'Geist Variable', sans-serif;
-    font-size: 32px;
-    font-weight: 500;
-    line-height: 130%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.consultation-title::after {
-    content: "Консультация";
-    color: rgba(255, 255, 255, 0.5);
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 130%;
-}
-
-.consultation-subtitle {
-    margin-top: 27px;
-    color: rgb(255, 255, 255);
-    font-size: 20px;
-    font-weight: 300;
-    line-height: 130%;
-}
-
-.consultation-form {
-    margin-top: 27px;
-    padding: 45px 54px;
-    border: 1px solid rgb(255, 255, 255);
-    display: flex;
-    flex-direction: column;
-    gap: 56px;
-    position: relative;
-}
-
-.consultation-form__input {
-    max-width: 46%;
-    color: rgba(255, 255, 255, 1);
-    font-size: 20px;
-    font-weight: 200;
-    line-height: 130%;
-    border-bottom: 1px solid rgb(255, 255, 255);
-}
-
-.consultation-form__input::placeholder {
-    color: rgba(255, 255, 255, .5);
-}
-
-.consultation-form__image {
-    position: absolute;
-    right: 60px;
-    top: 50%;
-    transform: translateY(-50%);
 }
 
 /* STAGES SECTION */
 
 .stages {
     margin-top: 300px;
+    background: rgba(60, 78, 61, 1);
+    padding: 80px 0 140px;
 }
 
 .stages-title__wrapper {
@@ -375,7 +398,7 @@
 }
 
 .stages-title {
-    color: rgb(33, 46, 33);
+    color: #fff;
     font-family: 'Geist Variable', sans-serif;
     font-size: 85px;
     font-weight: 300;
@@ -383,7 +406,7 @@
 
 .stages-title__wrapper::after {
     content: "КАК ПРОХОДИТ СТРОИТЕЛЬТВО";
-    color: rgba(33, 46, 33, 0.51);
+    color: rgba(255, 255, 255, 0.51);
     font-family: 'Geist Variable', sans-serif;
     font-size: 20px;
     font-weight: 300;
@@ -399,7 +422,7 @@
 
 .stages__item {
     max-width: 312px;
-    border: 1px solid rgb(33, 46, 33);
+    border: 1px solid #fff;
     padding: 28px 26px 0 26px;
     display: flex;
     flex-direction: column;
@@ -408,28 +431,28 @@
 }
 
 .stages__item-title {
-    color: rgb(33, 46, 33);
+    color: #fff;
     font-family: 'Geist Variable', sans-serif;
     font-size: 32px;
     font-weight: 400;
 }
 
 .stages__item-prepayment {
-    color: rgb(33, 46, 33);
+    color: #fff;
     font-size: 20px;
     font-weight: 600;
     line-height: 100%;
 }
 
 .stages__item-descr {
-    color: rgb(33, 46, 33);
+    color: #fff;
     font-size: 20px;
     font-weight: 300;
     line-height: 130%;
 }
 
 .stages__item-number {
-    color: rgba(33, 46, 33, 0.21);
+    color: rgba(255, 255, 255, 0.21);
     font-size: 64px;
     font-weight: 600;
     line-height: 100%;
@@ -443,7 +466,7 @@
 }
 
 .stages__pre-title {
-    color: rgba(33, 46, 33, 0.51);
+    color: rgba(255, 255, 255, 0.51);
     font-family: 'Geist Variable', sans-serif;
     font-size: 20px;
     font-weight: 300;
@@ -464,17 +487,11 @@
 
 .stages__finish {
     border: none;
-    background: url(../img/index/stages/bg.png);
+    background: url(../img/index/stages/bg-white.png);
 }
 
 .stages__finish .stages__item-title {
-    color: #fff;
-}
-
-.stages__finish .stages__item-number {
-    text-shadow: none;
-    color: transparent;
-    -webkit-text-stroke: 1px #fff;
+    color: rgba(33, 46, 33, 1);
 }
 
 .stages__item-img {

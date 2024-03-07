@@ -7,13 +7,14 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/index.css">
-    <title>Main-page</title>
+    <title>ДомСтрой | Главная</title>
 </head>
 <body>
     <header class="header">
         <div class="header__wrapper container">
             <a class="logo-link" href="">
-                <div class="logo"></div>
+                <img class="logo" src="img/logo.png" alt="">
+                <div class="logo-name">Домстрой</div>
             </a>
             <nav class="header__nav">
                 <ul class="header__nav__list nav__list">
@@ -65,21 +66,21 @@
         </div>
     </header>
     <main>
+        <nav class="promo__nav">
+            <ul class="promo__nav__list nav__list">
+                <li class="nav__list-item"><a href="index.html">Главная</a></li>
+                <li class="nav__list-item"><a href="">Ипотека</a></li>
+                <li class="nav__list-item"><a href="">Акции</a></li>
+                <li class="nav__list-item"><a href="">Проекты</a></li>
+                <li class="nav__list-item"><a href="stages.html">Этапы работы</a></li>
+                <li class="nav__list-item"><a href="#reviews">Отзывы</a></li>
+                <li class="nav__list-item"><a href="about.html">О нас</a></li>
+                <li class="nav__list-item"><a href="#quiz">Квиз</a></li>
+                <li class="nav__list-item"><a href="#faq">Вопрос ответ</a></li>
+            </ul>
+        </nav>
         <section class="promo">
             <div class="container">
-                <nav class="promo__nav">
-                    <ul class="promo__nav__list nav__list">
-                        <li class="nav__list-item"><a href="index.html">Главная</a></li>
-                        <li class="nav__list-item"><a href="">Ипотека</a></li>
-                        <li class="nav__list-item"><a href="">Акции</a></li>
-                        <li class="nav__list-item"><a href="">Проекты</a></li>
-                        <li class="nav__list-item"><a href="stages.html">Этапы работы</a></li>
-                        <li class="nav__list-item"><a href="#reviews">Отзывы</a></li>
-                        <li class="nav__list-item"><a href="about.html">О нас</a></li>
-                        <li class="nav__list-item"><a href="#quiz">Квиз</a></li>
-                        <li class="nav__list-item"><a href="#faq">Вопрос ответ</a></li>
-                    </ul>
-                </nav>
                 <div class="promo__content">
                     <h1 class="promo-title">
                         К<span class="vetrino">А</span>РКАСНЫЕ <br>
@@ -109,6 +110,7 @@
             <img class="promo-img" src="img/index/promo/01.png" alt="">
         </section>
         <section class="houses">
+            <div class="houses__banner">ЖЕЛЕЗ<span class="vetrino">Н</span>АЯ КРЫША В П<span class="vetrino">О</span>ДАР<span class="vetrino">О</span>К</div>
             <div class="swiper houses-swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide house">
@@ -136,54 +138,78 @@
         </section>
         <section class="mortgage">
             <div class="right-container">
-                <h2 class="mortgage-title">ИПОТЕКА С ГОС. ПОДДЕРЖКОЙ</h2>
-                <div class="mortgage__factors">
-                    <div class="mortgage__factors-item">Ипотека от 2.5%</div>
-                    <div class="mortgage__factors-item">Без подтверждения доходов</div>
-                </div>
+                <h2 class="mortgage-title">ИП<span class="vetrino">О</span>ТЕКА С ГОС. ПОДД<span class="vetrino">Е</span>РЖКОЙ</h2>
                 <div class="mortgage__wrapper">
-                    <div class="mortgage__block">
-                        <p class="mortgage__block-text">
-                            Банки, с которыми мы сотрудничаем
-                        </p>
-                        <div class="mortgage__btns">
-                            <button class="click-btn dark-green">Рассчитать ипотеку</button>
-                            <button class="click-btn green-border">Подробнее</button>
-                        </div>
+                    <div class="mortgage__info">
+                        <ul class="mortgage__factors">
+                            <li class="mortgage__factors-item">Без подтверждения доходов</li>
+                            <li class="mortgage__factors-item">Гражданам РФ и иностранным гражданам</li>
+                        </ul>
+                        <ul class="mortgage__types">
+                            <li class="mortgage__types-item mortage__type">
+                                <span class="mortgage-number">01</span>
+                                <span class="mortgage-name">Сельская ипотека</span>
+                                <span class="mortgage-procent">3%</span>
+                            </li>
+                            <li class="mortgage__types-item mortage__type">
+                                <span class="mortgage-number">02</span>
+                                <span class="mortgage-name">Гос. Субсидии и Гос. поддержка</span>
+                                <span class="mortgage-procent">8%</span>
+                            </li>
+                            <li class="mortgage__types-item mortage__type">
+                                <span class="mortgage-number">03</span>
+                                <span class="mortgage-name">Для семей</span>
+                                <span class="mortgage-procent">5.5%</span>
+                            </li>
+                            <li class="mortgage__types-item mortage__type">
+                                <span class="mortgage-number">04</span>
+                                <span class="mortgage-name">IT программа</span>
+                                <span class="mortgage-procent"><span class="from">от</span> 2.5%</span>
+                            </li>
+                        </ul>
+                        <button class="consult-btn click-btn dark-green">Рассчитать ипотеку</button>
                     </div>
-                    <ul class="mortgage__banks">
-                        <li class="mortgage__banks-item bank">
-                            <div class="bank-logo__wrapper">
-                                <img class="bank-logo" src="img/index/mortgage/01.png" alt="">
-                            </div>
-                            <h3 class="bank-name">Альфабанк</h3>
-                        </li>
-                        <li class="mortgage__banks-item bank">
-                            <div class="bank-logo__wrapper">
-                                <img class="bank-logo" src="img/index/mortgage/02.png" alt="">
-                            </div>
-                            <h3 class="bank-name">Дом РФ</h3>
-                        </li>
-                        <li class="mortgage__banks-item bank">
-                            <div class="bank-logo__wrapper">
-                                <img class="bank-logo" src="img/index/mortgage/03.png" alt="">
-                            </div>
-                            <h3 class="bank-name">ВТБ</h3>
-                        </li>
-                        <li class="mortgage__banks-item bank">
-                            <div class="bank-logo__wrapper">
-                                <img class="bank-logo" src="img/index/mortgage/04.png" alt="">
-                            </div>
-                            <h3 class="bank-name">РОССЕЛЬХОЗ Банк</h3>
-                        </li>
-                        <li class="mortgage__banks-item bank">
-                            <div class="bank-logo__wrapper">
-                                <img class="bank-logo" src="img/index/mortgage/05.png" alt="">
-                            </div>
-                            <h3 class="bank-name">Сбербанк</h3>
-                        </li>
-                    </ul>
+                    <div class="mortgage__bg"></div>
                 </div>
+                <div class="banks-title">Банки с которыми мы сотрудничаем</div>
+                <ul class="mortgage__banks">
+                    <li class="mortgage__banks-item bank">
+                        <div class="bank-logo__wrapper">
+                            <img class="bank-logo" src="img/index/mortgage/05.png" alt="">
+                        </div>
+                        <h3 class="bank-name">Сбербанк</h3>
+                    </li>
+                    <li class="mortgage__banks-item bank">
+                        <div class="bank-logo__wrapper">
+                            <img class="bank-logo" src="img/index/mortgage/03.png" alt="">
+                        </div>
+                        <h3 class="bank-name">ВТБ</h3>
+                    </li>
+                    <li class="mortgage__banks-item bank">
+                        <div class="bank-logo__wrapper">
+                            <img class="bank-logo" src="img/index/mortgage/01.png" alt="">
+                        </div>
+                        <h3 class="bank-name">Альфабанк</h3>
+                    </li>
+                    <li class="mortgage__banks-item bank">
+                        <div class="bank-logo__wrapper">
+                            <img class="bank-logo" src="img/index/mortgage/06.png" alt="">
+                        </div>
+                        <h3 class="bank-name">Росбанк</h3>
+                    </li>
+                    <li class="mortgage__banks-item bank">
+                        <div class="bank-logo__wrapper">
+                            <img class="bank-logo" src="img/index/mortgage/02.png" alt="">
+                        </div>
+                        <h3 class="bank-name">Дом РФ</h3>
+                    </li>
+                    <li class="mortgage__banks-item bank">
+                        <div class="bank-logo__wrapper">
+                            <img class="bank-logo" src="img/index/mortgage/04.png" alt="">
+                        </div>
+                        <h3 class="bank-name">РОССЕЛЬХОЗ <br> Банк</h3>
+                    </li>
+                </ul>
             </div>
         </section>
         <section class="about">
@@ -237,21 +263,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="consultation__wrapper">
-                    <div class="about-block-1"></div>
-                    <div class="consultation">
-                        <h3 class="consultation-title">ПОЛУЧИ БЕСПЛАТНУЮ <br> КОНСУЛЬТАЦИЮ ПРЯМО СЕЙЧАС</h3>
-                        <h4 class="consultation-subtitle">
-                            Строительство без забот с нами
-                        </h4>
-                        <form class="consultation-form" action="">
-                            <input class="consultation-form__input" type="text" placeholder="Имя" required>
-                            <input class="consultation-form__input" type="text" placeholder="Телефон" required>
-                            <button type="submit" class="click-btn consult-btn popup-open-btn">Получить консультацию</button>
-                            <img class="consultation-form__image" src="img/index/about/consult-phone.png" alt="">
-                        </form>
-                    </div>
-                </div>
+                <button class="click-btn consult-btn about-consult">ПОЛУЧИТЬ БЕСПЛАТНУЮ КОНСУЛЬТАЦИЮ</button>
             </div>
         </section>
         <section class="projects index__projects">
@@ -383,12 +395,11 @@
                     <div class="stages__item-img">
                         <img src="img/index/stages/house-2.png" alt="">
                     </div>
-                    <span class="stages__item-number">06</span>
                 </li>
             </ul>
             <div class="stages__btns right-container">
                 <button class="stages-btn click-btn light-green">ПОДРОБНЕЕ</button>
-                <button class="stages-btn click-btn dark-green popup-open-btn">ПОЛУЧИТЬ БЕСПЛАТНУЮ КОНСУЛЬТАЦИЮ</button>
+                <button class="stages-btn click-btn consult-btn popup-open-btn">ПОЛУЧИТЬ БЕСПЛАТНУЮ КОНСУЛЬТАЦИЮ</button>
             </div>
         </section>
         <section class="guarantee">
@@ -420,9 +431,6 @@
                     </ul>
                 </div> 
             </div>
-        </section>
-        <section class="bg">
-            <img src="img/index/bg.png" alt="">
         </section>
         <section class="reviews no-avatar" id="reviews">
             <h2 class="reviews-title right-container">СЧАСТЛ<span class="vetrino">И</span>ВЫЕ КЛИЕНТЫ Г<span class="vetrino">О</span>В<span class="vetrino">О</span>РЯТ...</h2>
@@ -846,132 +854,6 @@
                 <p class="quiz-promotion">СКИДКУ МОЖНО ПОЛУЧИТЬ ТОЛЬКО ДО 20 ФЕВРАЛЯ</p>
             </div>
         </section>
-        <section class="faq" id="faq">
-            <div class="faq__header">
-                <h2 class="faq-title">ОСТАЛИСЬ ВОПРОСЫ?</h2>
-                <p class="faq-descr">
-                    НЕ ОСТАВЛЯЙТЕ СВОИ ВОПРОСЫ БЕЗ ОТВЕТОВ,  ОСТАВЬТЕ ЗВАЯВКУ , НАШ МЕНЕДЖЕР ПЕРЕЗВОНИТ ВАМ И БЕСПЛАТНО ПРОКОНСУЛЬТИРУЕТ
-                </p>
-                <button class="click-btn faq-btn popup-open-btn">Оставить заявку</button>
-            </div>
-            <div class="faq__wrapper right-container">
-                <div class="faq__show">
-                    <span class="faq__show-text">ОТВЕТЫ НА ЧАСТОЗАДАВАЕМЫЕ ВОПРОСЫ</span>
-                    <img class="faq__show-img" src="img/index/faq/question-img.png" alt="">
-                    <span class="faq__show-text">Дом Строй</span>
-                </div>
-                <ul class="faq__list">
-                    <li class="faq__list-item faq__item">
-                        <div class="faq__item__header">
-                            <span class="faq__item-number"></span>
-                            <p class="faq__item-question">
-                                Какие материалы лучше использовать для постройки каркасного или каменного дома?
-                            </p>
-                            <button class="faq__item-trigger"></button>
-                        </div>
-                        <p class="faq__item-answer">
-                            • Для постройки каркасного дома лучше использовать древесину высокого качества, такую как ель, сосна или лиственница. Эти породы дерева обладают высокой прочностью и устойчивостью к влаге, что делает их идеальным выбором для каркасной конструкции. <br> <br>
-                            • Для постройки каменного дома можно использовать различные материалы, такие как кирпич, природный камень или блоки из ячеистого бетона. Кирпич и природный камень обладают высокой прочностью и устойчивостью к погодным условиям, а блоки из ячеистого бетона обеспечивают хорошую теплоизоляцию и звукоизоляцию.
-                        </p>
-                    </li>
-                    <li class="faq__list-item faq__item">
-                        <div class="faq__item__header">
-                            <span class="faq__item-number"></span>
-                            <p class="faq__item-question">
-                                Каковы основные преимущества и недостатки каркасных домов?
-                            </p>
-                            <button class="faq__item-trigger"></button>
-                        </div>
-                        <p class="faq__item-answer">
-                            • Преимущества: <br>
-                            - Быстрота строительства<br>
-                            - Низкая стоимость строительства<br>
-                            - Легкость конструкции, что позволяет экономить на фундаменте<br>
-                            - Хорошая теплоизоляция и звукоизоляция<br>
-                            - Возможность изменения планировки в будущем <br>
-                            - Энергосбережение благодаря утеплителям<br> <br>
-                            • Особенности<br>
-                            - Ограниченный выбор отделочных материалов<br>
-                            - Необходимость регулярного ремонта: жидаемый срок службы каркасных домов составляет от 70 до 100 лет, в то время как каменные дома могут прослужить от 120 до 150 лет
-                        </p>
-                    </li>
-                    <li class="faq__list-item faq__item">
-                        <div class="faq__item__header">
-                            <span class="faq__item-number"></span>
-                            <p class="faq__item-question">
-                                Каковы основные преимущества и особенности каменных домов?
-                            </p>
-                            <button class="faq__item-trigger"></button>
-                        </div>
-                        <p class="faq__item-answer">
-                            • Преимущества: <br>
-                            - Высокая прочность и устойчивость к погодным условиям <br>
-                            - Долговечность <br>
-                            - Хорошая звукоизоляция <br>
-                            - Возможность использования различных отделочных материалов <br>
-                            <br>
-                            • Особенности <br>
-                            - Высокая стоимость строительства <br>
-                            - Долгий срок строительства <br>
-                            - Трудность изменения планировки в будущем <br>
-                            - Ограниченная теплоизоляция, что требует использования дополнительных утеплителей
-                        </p>
-                    </li>
-                    <li class="faq__list-item faq__item">
-                        <div class="faq__item__header">
-                            <span class="faq__item-number"></span>
-                            <p class="faq__item-question">
-                                Какие дополнительные услуги могут быть предложены при постройке каркасного или каменного дома?
-                            </p>
-                            <button class="faq__item-trigger"></button>
-                        </div>
-                        <p class="faq__item-answer">
-                            • При постройке каркасного или каменного дома компания может предложить дополнительные услуги, такие как установка коммуникаций (вода, свет, газ, электричество), внутренняя отделка, ремонт и установка мебели.
-                        </p>
-                    </li>
-                     <li class="faq__list-item faq__item">
-                        <div class="faq__item__header">
-                            <span class="faq__item-number"></span>
-                            <p class="faq__item-question">
-                                Каковы сроки строительства каркасного или каменного дома?
-                            </p>
-                            <button class="faq__item-trigger"></button>
-                        </div>
-                        <p class="faq__item-answer">
-                            • Сроки строительства каркасного или каменного дома зависят от многих факторов, таких как размер дома, сложность проекта, доступность материалов и т.д. Обычно, строительство каркасного дома занимает от 3 до 6 месяцев, в зависимости от размеров и сложности проекта. Строительство каменного дома может занять больше времени из-за необходимости обработки и укладки камней, а также из-за более трудоемкой работы с фундаментом и стенами. В среднем, строительство каменного дома занимает от 6 до 12 месяцев.
-                        </p>
-                    </li>
-                    <li class="faq__list-item faq__item">
-                        <div class="faq__item__header">
-                            <span class="faq__item-number"></span>
-                            <p class="faq__item-question">
-                                Какова стоимость постройки каркасного или каменного дома и как можно сэкономить на строительстве?
-                            </p>
-                            <button class="faq__item-trigger"></button>
-                        </div>
-                        <p class="faq__item-answer">
-                            • Если вы задумываетесь о постройке каркасного или каменного дома, то стоимость проекта будет зависеть от многих факторов, таких как размер дома, материалы, используемые при строительстве, и местоположение. Однако, мы можем гарантировать, что наша компания предлагает конкурентоспособные цены и готова предложить вам оптимальные варианты для экономии на строительстве. Мы готовы обсудить ваши требования и рассмотреть все возможности для создания дома вашей мечты по приемлемой цене. Оставьте заявку на обратный звонок и наши специалисты свяжутся с вами в ближайшее время, чтобы обсудить детали вашего проекта и ответить на все ваши вопросы.
-                            <br> <br>
-                            <a class="faq-consultation" href="">Получить бесплатную консультацию</a>
-                        </p>
-                    </li>
-                    <li class="faq__list-item faq__item">
-                        <div class="faq__item__header">
-                            <span class="faq__item-number"></span>
-                            <p class="faq__item-question">
-                                Как выбрать наиболее подходящий тип дома для моих потребностей?
-                            </p>
-                            <button class="faq__item-trigger"></button>
-                        </div>
-                        <p class="faq__item-answer">
-                            • Выбор дома - это серьезное дело! Необходимо учесть множество факторов: сколько денег готовы потратить, сколько членов семьи, какие требования к функциональности, какой климат и какой стиль дизайна предпочтительнее. Но не переживайте, мы здесь, чтобы помочь вам определиться с выбором! Просто заполните форму обратной связи и наши специалисты с радостью помогут вам выбрать наиболее подходящий вариант для вашей семьи и учтут все ваши пожелания.
-                            <br> <br>
-                            <a class="faq-consultation" href="">Получить бесплатную консультацию</a>
-                        </p>
-                    </li>
-                </ul>
-            </div>
-        </section>
         <section class="feedback index__feedback">
             <div class="right-container">
                 <div class="feedback__wrapper">
@@ -992,8 +874,11 @@
             
     </main>
     <footer class="footer">
+        <a href="" class="footer-logo">
+            <img src="img/logo.png" alt="">
+        </a>
         <div class="container">
-            <h2 class="footer-title">Д<span class="vetrino">О</span>М СТР<span class="vetrino">О</span>Й</h2>
+            <h2 class="footer-title">Д<span class="vetrino">О</span>МСТР<span class="vetrino">О</span>Й</h2>
             <nav class="footer__nav">
                 <ul class="footer__nav__list footer__list">
                     <li class="footer__list-item">Главная</li>
