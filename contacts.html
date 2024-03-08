@@ -3,11 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <title>ДомСтрой | Контакты</title>
     <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/projects.css">
-    <title>ДомСтрой | Проекты</title>
+    <link rel="stylesheet" href="css/contacts.css">
 </head>
 <body>
     <header class="header">
@@ -67,15 +65,33 @@
     </header>
 
     <main>
-        <section class="promo">
-            <div class="container promo__wrapper">
-                <div class="promo__titles">
-                    <h2 class="promo-subtitle">Дом Строй</h2>
-                    <h1 class="promo-title">ПР<span class="vetrino">О</span>ЕКТЫ <br> ДОМОВ</h1>
+        <section class="contacts">
+            <div class="container">
+                <h1 class="contacts-title">К<span class="vetrino">О</span>НТАКТЫ</h1>
+                <div class="contacts__wrapper">
+                    <div class="contacts__left">
+                        <div class="contacts-items__wrapper">
+                            <div class="contacts-subtitle">Горячая линия</div>
+                            <a class="contacts-hotline contacts-text" href="tel:+7(989)-188-36-65">+7(989)-188-36-65</a>
+                        </div>
+                        <button class="contacts-btn contacts-text popup-open-btn">Получить обратный звонок</button>
+                        <div class="contacts-items__wrapper">
+                            <div class="contacts-subtitle">Почта</div>
+                            <a class="contacts-mail contacts-text" href="mailto:domstroi3@yandex.ru">domstroi3@yandex.ru</a>
+                        </div>
+                        <div class="contacts-company">ДомСтрой</div>
+                    </div>
+                    <div class="contacts__right">
+                        <div class="contacts-items__wrapper">
+                            <div class="contacts-subtitle contacts-address__title">Адрес</div>
+                            <div class="contacts-text">Московская область, город Одинцово, улица Неделина 2А, офис 215</div>
+                        </div>
+                        <div class="contacts-map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2675.549413054918!2d37.26976571835106!3d55.67403619434902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b5504f71a2f0b3%3A0xca49210d30e98879!2z0YPQuy4g0J3QtdC00LXQu9C40L3QsCwgMtCwLCDQntC00LjQvdGG0L7QstC-LCDQnNC-0YHQutC-0LLRgdC60LDRjyDQvtCx0LsuLCAxNDMwMDI!5e0!3m2!1sru!2sru!4v1709930720201!5m2!1sru!2sru" width="100%" height="" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
                 </div>
-                <span class="promo-projects_amount">230+ ПРОЕКТОВ</span>
             </div>
-            <img class="promo-img" src="img/projects-page/promo/promo-img.png" alt="">
         </section>
     </main>
 
@@ -101,5 +117,30 @@
         </div>
         <img class="footer-img" src="img/footer/footer-img.png" alt="">
     </footer>
+
+    <div class="overlay">
+        <div class="popup">
+            <button class="popup-close"></button>
+            <form class="popup__form" action="">
+                <p class="popup__form-title">
+                    Наша команда поможет вам выбрать проект, который подходит именно вам
+                </p>
+                <p class="popup__form-descr">
+                    Выбор проекта может быть сложным, но не для наших экспертов. Оставьте заявку и получите квалифицированную помощь в выборе проекта
+                </p>
+                <input class="popup__form-input" type="text" placeholder="Имя" required>
+                <input class="popup__form-input" type="text" placeholder="Телефон" required>
+                <button class="click-btn popup__form-btn">Получить бесплатную консультацию</button>
+            </form>
+            <div class="popup__thanks">
+                <p class="popup__thanks-title">
+                    Наш эксперт позвонит вам в течение 5 минут 
+                </p>
+                <button class="click-btn popup__form-btn thanks-btn">Ок</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
 </body>
 </html>
