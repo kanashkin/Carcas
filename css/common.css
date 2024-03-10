@@ -94,6 +94,8 @@ li {
     font-weight: 400;
     line-height: 130%;
     max-width: fit-content;
+    justify-content: center;
+    transition: .3s all;
 }
 
 .click-btn.dark-green {
@@ -102,10 +104,21 @@ li {
     color: rgb(255, 255, 255);
 }
 
+.click-btn.dark-green:hover,
+.consult-btn:hover {
+    background: rgba(104, 142, 104, 1);
+    border: 1px solid rgba(104, 142, 104, 1);
+}
+
 .click-btn.light-green {
     background: rgb(127, 165, 129);
     border: 1px solid rgba(127, 165, 129);
     color: rgb(255, 255, 255);
+}
+
+.click-btn.light-green:hover {
+    background: rgb(60, 78, 61);
+    border: 1px solid rgb(60, 78, 61);
 }
 
 .click-btn.green-border {
@@ -116,6 +129,7 @@ li {
 .consult-btn {
     color: rgb(0, 0, 0);
     background: rgb(255, 255, 255);
+    border: 1px solid #fff;
 }
 
 /* --- BUTTONS --- */
@@ -245,7 +259,7 @@ li {
     justify-content: space-between;
 }
 
-.projects__footer>button {
+.projects__footer>.click-btn {
     max-width: 100%;
     width: 100%;
 }
@@ -663,6 +677,12 @@ li {
     line-height: 130%;
     border: 1px solid #000;
     text-transform: uppercase;
+    transition: .3s all;
+}
+
+.scroll-up:hover {
+    background: rgba(127, 165, 129, 1);
+    border: 1px solid rgba(127, 165, 129, 1);
 }
 
 /* FOOTER */

@@ -1,48 +1,54 @@
 window.addEventListener('DOMContentLoaded', function() {
-    const housesSwiper = new Swiper('.houses-swiper', {
-        slidesPerView: 4,
-        spaceBetween: 30,
-        loop: true,
-        speed: 700,
-    })
+    try {
+        const housesSwiper = new Swiper('.houses-swiper', {
+            slidesPerView: 4,
+            spaceBetween: 30,
+            loop: true,
+            speed: 700,
+        })
+    } catch {}
     
-    const projectsSwiper = new Swiper('.projects-swiper', {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        loop: true,
-        speed: 700,
-        pagination: {
-            el: '.projects-pagination',
-        },
-        navigation: {
-            prevEl: '.projects-prev',
-            nextEl: '.projects-next',
-        },
-        on: {
-            slideChange: function () {
-                updateNumberPagination(this)
+    try {
+        const projectsSwiper = new Swiper('.projects-swiper', {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            loop: true,
+            speed: 700,
+            pagination: {
+                el: '.projects-pagination',
             },
-        },
-    })
+            navigation: {
+                prevEl: '.projects-prev',
+                nextEl: '.projects-next',
+            },
+            on: {
+                slideChange: function () {
+                    updateNumberPagination(this)
+                },
+            },
+        })
+    } catch {}
 
-    const reviewsSwiper = new Swiper('.reviews-swiper', {
-        slidesPerView: 2,
-        spaceBetween: 30,
-        speed: 700,
-        loop: true,
-        pagination: {
-            el: '.reviews-pagination',
-        },
-        navigation: {
-            prevEl: '.reviews-prev',
-            nextEl: '.reviews-next',
-        },
-        on: {
-            slideChange: function () {
-                updateNumberPagination(this)
+    try {
+        const reviewsSwiper = new Swiper('.reviews-swiper', {
+            slidesPerView: 2,
+            spaceBetween: 30,
+            speed: 700,
+            loop: true,
+            pagination: {
+                el: '.reviews-pagination',
             },
-        },
-    })
+            navigation: {
+                prevEl: '.reviews-prev',
+                nextEl: '.reviews-next',
+            },
+            on: {
+                slideChange: function () {
+                    updateNumberPagination(this)
+                },
+            },
+        })
+    } catch {}
     
     function addNumberPagination() {
         const swiperControLBlocks = document.querySelectorAll('.swiper-control')
@@ -98,42 +104,46 @@ window.addEventListener('DOMContentLoaded', function() {
     function addFaqNumeration() {
         const faqBlocks = document.querySelectorAll('.faq__item')
 
-        faqBlocks.forEach(function(block) {
-            let blockNumber = block.querySelector('.faq__item-number')
-            let blockIndex = Array.from(faqBlocks).indexOf(block) + 1
-
-            if (blockIndex < 10) {
-                blockIndex = '0' + blockIndex
-            }
-
-            blockNumber.textContent = blockIndex
-        })
+        if (faqBlocks) {
+            faqBlocks.forEach(function(block) {
+                let blockNumber = block.querySelector('.faq__item-number')
+                let blockIndex = Array.from(faqBlocks).indexOf(block) + 1
+    
+                if (blockIndex < 10) {
+                    blockIndex = '0' + blockIndex
+                }
+    
+                blockNumber.textContent = blockIndex
+            })
+        }
     }
 
     addFaqNumeration()
 
     function popup() {
         const openBtns = document.querySelectorAll('.popup-open-btn')
-        const popup = document.querySelector('.overlay')
-        const popupForm = popup.querySelector('.popup__form')
-        const popupFormBtn = popupForm.querySelector('.popup__form-btn')
-        const popupThanks = popup.querySelector('.popup__thanks')
-        const closeBtn = popup.querySelector('.popup-close')
+        if(openBtns.length > 0) {
+            const popup = document.querySelector('.overlay')
+            const popupForm = popup.querySelector('.popup__form')
+            const popupFormBtn = popupForm.querySelector('.popup__form-btn')
+            const popupThanks = popup.querySelector('.popup__thanks')
+            const closeBtn = popup.querySelector('.popup-close')
 
-        openBtns.forEach(function(btn) {
-            btn.addEventListener('click', function() {
-                popup.classList.add('active')
-                popupFormBtn.addEventListener('click', function() {
-                    
+            openBtns.forEach(function(btn) {
+                btn.addEventListener('click', function() {
+                    popup.classList.add('active')
+                    popupFormBtn.addEventListener('click', function() {
+                        
+                    })
                 })
             })
-        })
 
-        closeBtn.addEventListener('click', function() {
-            popup.classList.remove('active')
-            popupForm.classList.remove('unactive')
-            popupThanks.classList.remove('active')
-        })
+            closeBtn.addEventListener('click', function() {
+                popup.classList.remove('active')
+                popupForm.classList.remove('unactive')
+                popupThanks.classList.remove('active')
+            })
+        }
     }
 
     popup()
@@ -141,17 +151,19 @@ window.addEventListener('DOMContentLoaded', function() {
     function addStarsToReview() {
         const reviews = document.querySelectorAll('.review')
 
-        reviews.forEach(function(review) {
-            const reviewRateNumber = review.querySelector('.review__rate-number').textContent
-            const reviewRateStars = review.querySelectorAll('svg')
-
-            reviewRateStars.forEach(function(star) {
-                const starIndex = Array.from(reviewRateStars).indexOf(star) + 1
-                if (starIndex <= reviewRateNumber) {
-                    star.classList.add('active')
-                }
+        if(reviews) {
+            reviews.forEach(function(review) {
+                const reviewRateNumber = review.querySelector('.review__rate-number').textContent
+                const reviewRateStars = review.querySelectorAll('svg')
+    
+                reviewRateStars.forEach(function(star) {
+                    const starIndex = Array.from(reviewRateStars).indexOf(star) + 1
+                    if (starIndex <= reviewRateNumber) {
+                        star.classList.add('active')
+                    }
+                })
             })
-        })
+        }
     }
 
     addStarsToReview()
@@ -163,41 +175,43 @@ window.addEventListener('DOMContentLoaded', function() {
         let quizIndex = 0
         const answers = {}
 
-        quizBtns.forEach(function(btn) {
+        if(quizBtns) {
+            quizBtns.forEach(function(btn) {
 
-            btn.addEventListener('click', function() {
-                let currentInputs = quizItems[quizIndex].querySelectorAll('.quiz-checkbox')
-                let checkedInput = false
-
-                quizItems[quizIndex].classList.remove('active')
-
-                if (btn.classList.contains('quiz-next')) {
-                    let quizItemQuestion = quizItems[quizIndex].getAttribute('data-question')
-                    let answerValues = []
-
-                    currentInputs.forEach(function(inputItem) {
-
-                        if (inputItem.checked) {
-                            let answerValue = inputItem.nextElementSibling.textContent
-                            answerValues.push(answerValue)
-                            checkedInput = true
+                btn.addEventListener('click', function() {
+                    let currentInputs = quizItems[quizIndex].querySelectorAll('.quiz-checkbox')
+                    let checkedInput = false
+    
+                    quizItems[quizIndex].classList.remove('active')
+    
+                    if (btn.classList.contains('quiz-next')) {
+                        let quizItemQuestion = quizItems[quizIndex].getAttribute('data-question')
+                        let answerValues = []
+    
+                        currentInputs.forEach(function(inputItem) {
+    
+                            if (inputItem.checked) {
+                                let answerValue = inputItem.nextElementSibling.textContent
+                                answerValues.push(answerValue)
+                                checkedInput = true
+                            }
+                        })
+    
+                        if (checkedInput) {
+                            quizIndex += 1
+                            answers[quizItemQuestion] = answerValues
                         }
-                    })
-
-                    if (checkedInput) {
-                        quizIndex += 1
-                        answers[quizItemQuestion] = answerValues
+    
+                    } else if (btn.classList.contains('quiz-prev')) {
+                        quizIndex -= 1
                     }
-
-                } else if (btn.classList.contains('quiz-prev')) {
-                    quizIndex -= 1
-                }
-
-                quizItems[quizIndex].classList.add('active')
-
-                console.log(answers);
+    
+                    quizItems[quizIndex].classList.add('active')
+    
+                    console.log(answers);
+                })
             })
-        })
+        }
     }
 
     quiz()
@@ -206,43 +220,85 @@ window.addEventListener('DOMContentLoaded', function() {
         const photoItems = document.querySelectorAll('.house-photo')
         const currentPhotoItem = document.querySelector('.house__photos-current')
 
-        let currentSrc = photoItems[0].getAttribute('src')
-        currentPhotoItem.setAttribute('src', currentSrc)
+        if(photoItems.length > 0) {
+            let currentSrc = photoItems[0].getAttribute('src')
+            currentPhotoItem.setAttribute('src', currentSrc)
 
-        photoItems.forEach(function(item) {
-            item.addEventListener('click', function() {
-                currentSrc = item.getAttribute('src')
-                currentPhotoItem.setAttribute('src', currentSrc)
+            photoItems.forEach(function(item) {
+                item.addEventListener('click', function() {
+                    currentSrc = item.getAttribute('src')
+                    currentPhotoItem.setAttribute('src', currentSrc)
+                })
             })
-        })
+        }
     }
 
-    try {
-        housePhotosSlides()
-    } catch {
-
-    }
+    housePhotosSlides()
 
     function pageScroll() {
         const menuBtns = document.querySelectorAll('.nav__list li a')
         
-        menuBtns.forEach(function(btn) {
-            btn.addEventListener('click', function(e) {
-                e.preventDefault()
-                const currentId = btn.getAttribute('href')
-                const currentBlock = document.querySelector(currentId)
-
-                if (currentBlock) {
-                    currentBlock.scrollIntoView({
-                        block: "center",
-                        behavior: "smooth",
-                    });
-                } else {
-                    window.location.href = currentId
-                }
+        if(menuBtns) {
+            menuBtns.forEach(function(btn) {
+                btn.addEventListener('click', function(e) {
+                    e.preventDefault()
+                    const currentId = btn.getAttribute('href')
+                    const currentBlock = document.querySelector(currentId)
+    
+                    if (currentBlock) {
+                        currentBlock.scrollIntoView({
+                            block: "center",
+                            behavior: "smooth",
+                        });
+                    } else {
+                        window.location.href = currentId
+                    }
+                })
             })
-        })
+        }
     }
 
     pageScroll()
+
+    function filters() {
+        const openTrigger = document.querySelectorAll('.open-filters')
+
+        if(openTrigger.length > 0) {
+            const popup = document.querySelector('.filters__overlay')
+
+            openTrigger.forEach(function(btn) {
+                btn.addEventListener('click', function() {
+                    popup.classList.add('active')
+                    setTimeout(function() {
+                        closeFilters()
+                    }, 1000)
+                })
+            })
+
+            function closeFilters() {
+                window.addEventListener('click', function(e) {
+                    if(e.target.classList.contains('filters__overlay')) {
+                        popup.classList.remove('active')
+                    }
+                })
+            }
+        }
+    }
+
+    filters()
+
+    function scrollUp() {
+        const btn = document.querySelector('.scroll-up')
+
+        if(btn) {
+            btn.addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                })
+            })
+        }
+    }
+
+    scrollUp()
 })

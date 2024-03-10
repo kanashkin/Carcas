@@ -57,6 +57,11 @@
     font-weight: 300;
     line-height: 130%;
     background: #3C4E3D;
+    transition: .3s all;
+}
+
+.mortgage-btn:hover {
+    background: #688E68;
 }
 
 .construction__info {
@@ -207,6 +212,12 @@
     justify-content: center;
     color: #fff;
     border: 1px solid #FFFFFF;
+    transition: .3s all;
+}
+
+.stages-btn:nth-child(2):hover {
+    background: #B6E2B8;
+    border: 1px solid #B6E2B8;
 }
 
 /* PROJECTS SECTION */

@@ -123,4 +123,9 @@
     font-family: 'Geist Variable', sans-serif;
     font-size: 32px;
     font-weight: 400;
+    transition: .3s all;
+}
+
+.stages-btn:hover {
+    background: rgba(104, 142, 104, 1);
 }
